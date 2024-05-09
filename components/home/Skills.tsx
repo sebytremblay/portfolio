@@ -3,7 +3,7 @@ import { skills } from "@/data/content/home";
 
 function Skills() {
   return (
-    <div className="flex flex-col md:flex-row justify-between relative">
+    <div className="flex flex-col md:flex-row justify-between relative pt-16">
       <h2 className="relative text-3xl w-full text-center md:text-left font-bold md:max-w-lg mb-10 md:mr-10 md:mb-0 md:w-max mr-0 ">
         I got the experience.
         <br />

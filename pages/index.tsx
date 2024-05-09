@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <Page currentPage="Home" meta={{ desc: "I'm a full-stack developer passionate about designing and coding seamless, user-friendly applications." }}>
       <Hero />
-      <div className="mt-20 space-y-32">
+      <div className="mt-20 space-y-8">
         <Timeline />
         <Projects />
         <Skills />
