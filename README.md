@@ -1,19 +1,22 @@
-# **[braydentw.io](https://braydentw.io)**
+# sebytremblay.io
 
-Hey there! I'm Brayden and this is my lovely lovely portfolio built using **React, NextJS, and TailwindCSS**!
+Welcome to the GitHub repository for [sebytremblay.io](https://sebytremblay.io), my personal website! This site serves as a professional portfolio, showcasing my experience and projects as an aspiring software developer.
 
-## Guidelines
+## About
 
-> **Note**: **I ask of you that you do your best to follow these rules:**
+I am Sebastian Tremblay, a rising Senior at Northeastern University specializing in Computer Science. My academic and professional journey has been deeply rooted in full-stack software engineering with a particular interest in backend development. This website is a reflection of my career thus far, highlighting my previous job experiences, academic projects, and my passion for technology.
 
-1. You can **use** this code and style **as inspiration**.
-2. **Please do not copy it directly**.
-3. **Giving credit** to (@BraydenTW) the author **is appreciated**.
+## Features
 
-Doing so makes it better for everyone here on this platform and respects what everyone has made. **Please be you and make yourself unique from the rest!** ✨
+- **Professional Timeline:** Learn more about my background, education, and software development experiences.
+- **Portfolio:** Detailed showcase of my projects, including descriptions, technologies used, and links to repositories/ live demos.
+- **Resume:** Access to my latest resume with a comprehensive list of skills and experiences.
+- **Contact Information:** Ways to get in touch with me for professional inquiries or collaborations.
 
-<hr/>
-<a href="https://www.buymeacoffee.com/braydenw" target="_blank"><img src="./public/static/misc/buy-me-a-coffee.svg" alt="Buy Me A Coffee: @BraydenW" width="160"></a>&nbsp;
-<a href="https://paypal.me/braydentw" target="_blank"><img src="./public/static/misc/paypal.svg" alt="PayPal: @BraydenTW" width="160"></a>
-<br/>
-<p>Thank you so much for your support. 💙</p>
+## Technologies
+
+This website is built using modern web technologies that I have mastered over my academic and professional career:
+
+- HTML/CSS
+- Typescript
+- React, Tailwind
