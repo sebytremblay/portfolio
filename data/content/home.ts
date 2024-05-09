@@ -87,7 +87,7 @@ export const experiences: TExperience[] = [
   {
     title: "Software Engineering Intern",
     companyName: "Salesforce",
-    icon: "/static/logos/salesforce.png",
+    icon: "/sebytremblay.io/static/logos/salesforce.png",
     iconBg: "#ade0ed",
     date: "May 2024 - Present",
     points: [
@@ -97,7 +97,7 @@ export const experiences: TExperience[] = [
   {
     title: "Software Tools Co-Op",
     companyName: "Insulet Corporation",
-    icon: "/static/logos/insulet.png",
+    icon: "/sebytremblay.io/static/logos/insulet.png",
     iconBg: "#C7B2D7",
     date: "July 2023 - December 2023",
     points: [
@@ -107,7 +107,7 @@ export const experiences: TExperience[] = [
   {
     title: "Software Engineering Intern",
     companyName: "Ultimate Kronos Group (UKG)",
-    icon: "/static/logos/ukg.png",
+    icon: "/sebytremblay.io/static/logos/ukg.png",
     iconBg: "#f7f7f7",
     date: "May 2022 - December 2022",
     points: [

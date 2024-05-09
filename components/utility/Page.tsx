@@ -22,21 +22,21 @@ function Page({ currentPage, meta: { title, desc }, children }: PageProps) {
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="/static/favicon/apple-touch-icon.png"
+          href="/sebytremblay.io/static/favicon/apple-touch-icon.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/static/favicon/favicon-32x32.png"
+          href="/sebytremblay.io/static/favicon/favicon-32x32.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/static/favicon/favicon-16x16.png"
+          href="/sebytremblay.io/static/favicon/favicon-16x16.png"
         />
-        <link rel="manifest" href="/static/favicon/site.webmanifest" />
+        <link rel="manifest" href="/sebytremblay.io/static/favicon/site.webmanifest" />
         <meta name="title" content={pageTitle} />
         <meta name="description" content={desc} />
 
@@ -46,7 +46,7 @@ function Page({ currentPage, meta: { title, desc }, children }: PageProps) {
         <meta property="og:description" content={desc} />
         <meta
           property="og:image"
-          content="https://braydentw.io/static/misc/og.png"
+          content="https://braydentw.io/sebytremblay.io/static/misc/og.png"
         />
 
         <meta property="twitter:card" content="summary_large_image" />
@@ -55,7 +55,7 @@ function Page({ currentPage, meta: { title, desc }, children }: PageProps) {
         <meta property="twitter:description" content={desc} />
         <meta
           property="twitter:image"
-          content="https://braydentw.io/static/misc/og.png"
+          content="https://braydentw.io/sebytremblay.io/static/misc/og.png"
         ></meta>
         <script
           async

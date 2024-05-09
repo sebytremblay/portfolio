@@ -10,19 +10,19 @@ function Skills() {
         Here is my toolbelt for success.
         <img
           className="sqD bottom-[-80px] left-[-50px] lg:bottom-[-50px] lg:left-[-35px] z-[-10]"
-          src="/static/doodles/skills/laptop.svg"
+          src="/sebytremblay.io/static/doodles/skills/laptop.svg"
         />
         <img
           className="sqD hidden md:block top-[140px] right-0 lg:top-[105px]"
-          src="/static/doodles/skills/coding.svg"
+          src="/sebytremblay.io/static/doodles/skills/coding.svg"
         />
         <img
           className="sqD hidden md:block top-[200px] right-[50px] lg:top-[170px] lg:right-[50px]"
-          src="/static/doodles/skills/youtube.svg"
+          src="/sebytremblay.io/static/doodles/skills/youtube.svg"
         />
         <img
           className="sqD top-[-15px] right-[-15px]"
-          src="/static/doodles/skills/fillStar.svg"
+          src="/sebytremblay.io/static/doodles/skills/fillStar.svg"
         />
       </h2>
       <div className="relative max-w-lg w-full mx-auto md:mx-none grid gap-x-8 gap-y-12 sm:gap-8 md:gap-12 grid-cols-3 sm:grid-cols-6 items-center place-content-center">
