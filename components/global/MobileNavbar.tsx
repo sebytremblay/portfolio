@@ -40,7 +40,7 @@ export default function MobileNavbar() {
           <Link href="/">
             <img
               className="mr-3"
-              src="/sebytremblay.io/static/logos/logo_full.svg"
+              src="/sebytremblay.io/static/logos/logo.svg"
               width="160"
             />
           </Link>
