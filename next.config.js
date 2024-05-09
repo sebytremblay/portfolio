@@ -1,5 +1,6 @@
 module.exports = {
   basePath: "/sebytremblay.io",
+  assertPrefix: "/sebytremblay.io/",
   output: "export",
   reactStrictMode: true,
 
