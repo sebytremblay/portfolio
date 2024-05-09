@@ -6,25 +6,26 @@ import Link from "next/link";
 function ProjectCard({ project }) {
   return (
     <div
-      className="max-w-sm mx-auto flex flex-col projects-center md:projects-start md:justify-center"
+      className="max-w-sm mx-auto flex flex-col items-center md:items-start md:justify-center"
       key={project.id}
     >
       <a
         href={project.link || project.github}
         target="_blank"
-        className={`w-full relative rounded-xl border-fun-gray border p-2 transition hover:-translate-y-2 hover:opacity-75 hover:border-fun-pink will-change-projectCard`}
+        className="w-full relative rounded-xl border-gray-300 border p-2 transition hover:-translate-y-2 hover:opacity-75 hover:border-pink-500 will-change-transform"
       >
         <img
           className="w-full rounded-md"
           src={project.img}
+          alt="Project Thumbnail"
         />
       </a>
-      <div className="w-full mt-5">
-        <div className="flex projects-center justify-between">
+      <div className="w-full mt-5 relative">
+        <div className="flex items-start justify-between">
           <a href={project.link || project.github} target="_blank">
             <h3 className="text-lg font-bold">{project.title}</h3>
           </a>
-          <div className="space-x-2">
+          <div className="flex space-x-2 pt-1.5 pr-1">
             {project.link && (
               <a href={project.link} target="_blank" rel="noreferrer">
                 <Image
@@ -41,25 +42,23 @@ function ProjectCard({ project }) {
                   src="/static/icons/github.svg"
                   width={16}
                   height={16}
-                  alt="Github Icon"
+                  alt="GitHub Icon"
                 />
               </a>
             )}
           </div>
         </div>
-        <p className="text-fun-gray text-left text-sm">{project.desc}</p>
+        <p className="text-gray-500 text-left text-sm">{project.desc}</p>
         <ul className="flex flex-wrap items-center mt-2 -ml-2 list-none">
-          {project.tags.map((tag, index) => {
-            return (
-              <li key={tag}>
-                <Link href={`/projects/tag/${kebabCase(tag)}`}>
-                  <div className="m-1 rounded-lg text-sm bg-fun-pink-dark py-1 px-2 cursor-pointer hover:opacity-75">
-                    {tag}
-                  </div>
-                </Link>
-              </li>
-            );
-          })}
+          {project.tags.map((tag, index) => (
+            <li key={tag}>
+              <Link href={`/projects/tag/${kebabCase(tag)}`}>
+                <div className="m-1 rounded-lg text-sm bg-pink-700 py-1 px-2 cursor-pointer hover:opacity-75">
+                  {tag}
+                </div>
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
     </div>

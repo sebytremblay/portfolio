@@ -306,3 +306,7 @@ pre {
 .sqD {
   @apply absolute z-[-10];
 }
+
+.text-secondary {
+  color: #aaa6c3; /* Ensures that all text-secondary classes are light-gray */
+}

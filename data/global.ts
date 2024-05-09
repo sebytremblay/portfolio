@@ -1,3 +1,5 @@
+import { link } from "fs"
+
 type Route = {
   title: string,
   path: string
@@ -15,11 +17,6 @@ type FooterCol = {
 
 type Footer = {
   columns: FooterCol[]
-  support: {
-    buymeacoffee: string
-    paypal: string
-    message: string
-  }
 };
 
 export const routes: Route[] = [
@@ -27,87 +24,63 @@ export const routes: Route[] = [
     title: "Home",
     path: "/",
   },
-  // {
-  //   title: "Blog",
-  //   path: "/blog",
-  // },
   {
     title: "Projects",
     path: "/projects",
   },
   {
-    title: "Designs",
-    path: "/designs",
-  },
+    title: "Resume",
+    path: "/resume",
+  }
 ];
 
+export const socials = {
+  github: {
+    name: "GitHub",
+    link: "https://github.com/sebytremblay",
+    icon: "/static/icons/github-f.svg",
+    leavesWebsite: true,
+  },
+  linkedIn: {
+    name: "LinkedIn",
+    link: "https://www.linkedin.com/in/sebastiantremblay/",
+    icon: "/static/icons/linkedin-f.svg",
+    leavesWebsite: true,
+  },
+}
 
 export const footer: Footer = {
   columns: [
     {
       title: "Pages",
-      links: [
-        {
-          name: "Home",
-          link: "/",
-          leavesWebsite: false,
-        },
-        // {
-        //   name: "Blog",
-        //   link: "/blog",
-        //   leavesWebsite: false,
-        // },
-        {
-          name: "Projects",
-          link: "/projects",
-          leavesWebsite: false,
-        },
-        {
-          name: "Designs",
-          link: "/designs",
-          leavesWebsite: false,
-        },
-      ],
+      links: routes.map(route => ({
+        name: route.title,
+        link: route.path,
+        leavesWebsite: false
+      }))
     },
     {
       title: "Social",
       links: [
         {
           name: "GitHub",
-          link: "https://github.com/braydentw",
+          link: "https://github.com/sebytremblay",
           icon: "/static/icons/github-f.svg",
           leavesWebsite: true,
         },
         {
           name: "LinkedIn",
-          link: "https://www.linkedin.com/in/braydentw/",
+          link: "https://www.linkedin.com/in/sebastiantremblay/",
           icon: "/static/icons/linkedin-f.svg",
           leavesWebsite: true,
         },
         {
-          name: "Dribbble",
-          link: "https://dribbble.com/braydentw",
-          icon: "/static/icons/dribbble-f.svg",
-          leavesWebsite: true,
-        },
-        {
-          name: "IndieHackers",
-          link: "https://indiehackers.com/braydentw",
-          icon: "/static/icons/indiehackers-f.svg",
-          leavesWebsite: true,
-        },
-        {
           name: "Email",
-          link: "mailto:contact@braydentw.io",
+          link: "mailto:tremblay.se@northeastern.edu",
           icon: "/static/icons/mail-f.svg",
           leavesWebsite: true,
         },
       ],
     },
   ],
-  support: {
-    buymeacoffee: "braydenw",
-    paypal: "braydentw",
-    message: "I appreciate your support very much! 💙",
-  },
 };

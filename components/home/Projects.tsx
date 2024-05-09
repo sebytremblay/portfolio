@@ -7,8 +7,8 @@ import ProjectCard from "../projects/ProjectCard";
 
 function Projects() {
   return (
-    <div className="flex flex-col text-left justify-between pt-8 relative">
-      <div id="learnmore">
+    <div className="flex flex-col text-left justify-between relative">
+      <div id="projects">
         <SectionTitle title="Here are a few of my favorite projects." />
       </div>
       <div className="grid grid-cols-1 gap-12 md:gap-5 md:grid-cols-3 items-start">
