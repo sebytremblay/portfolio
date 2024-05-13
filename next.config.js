@@ -1,6 +1,6 @@
 module.exports = {
-  basePath: "/sebytremblay.io",
-  assetPrefix: "/sebytremblay.io/",
+  basePath: "/sebytremblay",
+  assetPrefix: "/sebytremblay/",
   output: "export",
   reactStrictMode: true,
 

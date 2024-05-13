@@ -1,6 +1,6 @@
-# sebytremblay.io
+# sebytremblay
 
-Welcome to the GitHub repository for [sebytremblay.io](https://sebytremblay.io), my personal website! This site serves as a professional portfolio, showcasing my experience and projects as an aspiring software developer.
+Welcome to the GitHub repository for [sebytremblay](https://sebytremblay.github.io/sebytremblay/), my personal website! This site serves as a professional portfolio, showcasing my experience and projects as an aspiring software developer.
 
 ## About
 

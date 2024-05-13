@@ -17,7 +17,7 @@ function Testimonials() {
                 <>
                   <img
                     className="sqD top-[-50px] left-0 bottom-auto right-auto md:bottom-[-50px] md:top-auto md:right-[-25px] md:left-auto w-20 z-[-100]"
-                    src="/sebytremblay.io/static/doodles/testimonials/yay.svg"
+                    src="/sebytremblay/static/doodles/testimonials/yay.svg"
                   />
                 </>
               )}
@@ -31,7 +31,7 @@ function Testimonials() {
               {index === 2 && (
                 <img
                   className="sqD top-[-30px] right-[-15px] w-11"
-                  src="/sebytremblay.io/static/doodles/testimonials/squiggle2.svg"
+                  src="/sebytremblay/static/doodles/testimonials/squiggle2.svg"
                 />
               )}
             </div>
