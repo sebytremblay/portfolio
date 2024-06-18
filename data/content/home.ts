@@ -72,7 +72,7 @@ export const experiences: TExperience[] = [
     iconBg: "#ade0ed",
     date: "May 2024 - Present",
     points: [
-      // TODO
+      "Led integration of management tools for Intelligent Document Processing executions into the MuleSoft admin console.",
     ],
   },
   {
@@ -82,7 +82,7 @@ export const experiences: TExperience[] = [
     iconBg: "#C7B2D7",
     date: "July 2023 - December 2023",
     points: [
-        // TODO
+        "Developed and supported internal software for our manufacturing team, helping streamline product quality testing.",
     ],
   },
   {
@@ -92,7 +92,7 @@ export const experiences: TExperience[] = [
     iconBg: "#f7f7f7",
     date: "May 2022 - December 2022",
     points: [
-      // TODO
+      "Enhanced and maintained the Performance Reviews feature of our UKG Pro product.",
     ],
   }
 ];
