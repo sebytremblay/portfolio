@@ -1,4 +1,4 @@
-import { kebabCase, kebabArray } from "@/utils/utils";
+import { kebabCase } from "@/utils/utils";
 import { Project } from "types";
 
 const projects: Project[] = [
@@ -14,7 +14,7 @@ const projects: Project[] = [
     desc: "Scrapes data from Twitter and uses fine-tuned RoBERTA model to classify financial information.",
     img: "/sebytremblay/static/projects/twitter-scraper.png",
     github: "https://github.com/sebytremblay/twitter_scraper",
-    tags: ["Python", "Twscrape", "RoBERTA", "Huggingface"],
+    tags: ["Python", "PyTorch", "Twscrape", "RoBERTA", "Pandas"],
   },
   {
     title: "Twitter Stock Predictions",
