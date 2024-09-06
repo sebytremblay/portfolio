@@ -15,7 +15,7 @@ function Heading({ tag }: HeadingProps) {
             Projects built with <b>{tag}</b>
             <img
               className="sqD w-8 sm:w-10 -top-6 -right-2 sm:-right-8 sm:-top-8 absolute"
-              src="/sebytremblay/static/doodles/hero/code.svg"
+              src="/static/doodles/hero/code.svg"
             />
           </h1>
         </>
@@ -24,7 +24,7 @@ function Heading({ tag }: HeadingProps) {
           Projects
           <img
             className="sqD w-10 -top-8 -right-8 absolute"
-            src="/sebytremblay/static/doodles/hero/code.svg"
+            src="/static/doodles/hero/code.svg"
           />
         </h1>
       )}

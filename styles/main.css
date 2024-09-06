@@ -166,7 +166,7 @@ body::-webkit-scrollbar-thumb {
 
 .blogSignature {
   position: absolute;
-  background: url(/sebytremblay/static/misc/signature.svg);
+  background: url(/static/misc/signature.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

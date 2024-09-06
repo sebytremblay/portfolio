@@ -22,41 +22,24 @@ function Page({ currentPage, meta: { title, desc }, children }: PageProps) {
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="/sebytremblay/static/favicon/apple-touch-icon.png"
+          href="/static/favicon/apple-touch-icon.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/sebytremblay/static/favicon/favicon-32x32.png"
+          href="/static/favicon/favicon-32x32.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/sebytremblay/static/favicon/favicon-16x16.png"
+          href="/static/favicon/favicon-16x16.png"
         />
-        <link rel="manifest" href="/sebytremblay/static/favicon/site.webmanifest" />
+        <link rel="manifest" href="/static/favicon/site.webmanifest" />
         <meta name="title" content={pageTitle} />
         <meta name="description" content={desc} />
-
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://braydentw.io/" />
-        <meta property="og:title" content={pageTitle} />
-        <meta property="og:description" content={desc} />
-        <meta
-          property="og:image"
-          content="https://braydentw.io/sebytremblay/static/misc/og.png"
-        />
-
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://braydentw.io/" />
-        <meta property="twitter:title" content={pageTitle} />
-        <meta property="twitter:description" content={desc} />
-        <meta
-          property="twitter:image"
-          content="https://braydentw.io/sebytremblay/static/misc/og.png"
-        ></meta>
+        
         <script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}

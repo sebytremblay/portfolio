@@ -95,7 +95,7 @@ function Footer() {
           rel="nooreferrer"
         >
           <Image
-            src="/sebytremblay/static/icons/github.svg"
+            src="/static/icons/github.svg"
             width={16}
             height={16}
             alt="Github Icon"

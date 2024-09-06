@@ -38,13 +38,13 @@ export const socials = {
   github: {
     name: "GitHub",
     link: "https://github.com/sebytremblay",
-    icon: "/sebytremblay/static/icons/github-f.svg",
+    icon: "/static/icons/github-f.svg",
     leavesWebsite: true,
   },
   linkedIn: {
     name: "LinkedIn",
     link: "https://www.linkedin.com/in/sebastiantremblay/",
-    icon: "/sebytremblay/static/icons/linkedin-f.svg",
+    icon: "/static/icons/linkedin-f.svg",
     leavesWebsite: true,
   },
 }
@@ -65,19 +65,19 @@ export const footer: Footer = {
         {
           name: "GitHub",
           link: "https://github.com/sebytremblay",
-          icon: "/sebytremblay/static/icons/github-f.svg",
+          icon: "/static/icons/github-f.svg",
           leavesWebsite: true,
         },
         {
           name: "LinkedIn",
           link: "https://www.linkedin.com/in/sebastiantremblay/",
-          icon: "/sebytremblay/static/icons/linkedin-f.svg",
+          icon: "/static/icons/linkedin-f.svg",
           leavesWebsite: true,
         },
         {
           name: "Email",
           link: "mailto:tremblay.se@northeastern.edu",
-          icon: "/sebytremblay/static/icons/mail-f.svg",
+          icon: "/static/icons/mail-f.svg",
           leavesWebsite: true,
         },
       ],
