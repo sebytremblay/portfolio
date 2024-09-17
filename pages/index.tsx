@@ -3,7 +3,6 @@ import Hero from "@/components/home/Hero";
 import Page from "@/components/utility/Page";
 import Projects from "@/components/home/Projects";
 import Skills from "@/components/home/Skills";
-import Testimonials from "@/components/home/Testimonials";
 import Timeline from "@/components/home/Timeline";
 
 export default function Home() {
@@ -14,8 +13,6 @@ export default function Home() {
         <Timeline />
         <Projects />
         <Skills />
-        {/* <Testimonials /> */ }
-        {/* <Posts allPosts={allPosts} /> */}
       </div>
       <CTA />
     </Page>

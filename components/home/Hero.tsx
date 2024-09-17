@@ -1,7 +1,33 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
+import KeepScrollingIcon from "@/components/utility/KeepScrollingIcon";
 
 function Hero() {
+  const [showIcon, setShowIcon] = useState(false);
+
+  const handleScroll = () => {
+    setShowIcon(false);
+    window.removeEventListener("scroll", handleScroll);
+  };
+
+  const handleClick = () => {
+    setShowIcon(true);
+    const timer = setTimeout(() => setShowIcon(false), 10000);
+
+    // Cleanup any pending timeouts if the component unmounts
+    return () => clearTimeout(timer);
+  };
+
+  // Only triggered once ScrollLink reaches its target
+  const handleSetActive = () => {
+    window.addEventListener("scroll", handleScroll);
+  };
+
+  // Cleanup scroll listener on unmount
+  useEffect(() => {
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
       <div
@@ -9,7 +35,7 @@ function Hero() {
         style={{ maxWidth: "1200px" }}
       >
         <p className="text-xl mb-5">Hey, I'm Sebastian.</p>
-        <h1 className="heroTitle inline-block max-w-2xl lg:max-w-4xl  w-auto relative text-5xl md:text-6xl lg:text-7xl tracking-tighter mb-10 font-bold heroShinyBg">
+        <h1 className="heroTitle inline-block max-w-2xl lg:max-w-4xl w-auto relative text-5xl md:text-6xl lg:text-7xl tracking-tighter mb-10 font-bold heroShinyBg">
           I enjoy <span className="heroShiny1 text-fun-pink">building</span> and{" "}
           <span className="heroShiny2 text-fun-pink">designing</span> full-stack applications.
           <img
@@ -54,12 +80,18 @@ function Hero() {
           offset={-30}
           smooth={true}
           duration={500}
+          onSetActive={handleSetActive}
         >
-          <div className="cursor-pointer font-bold whitespace-nowrap px-10 py-4 text-fun-white border-2 text-xl rounded-full border-fun-white bg-bg hover:bg-fun-pink hover:text-white hover:border-fun-pink transition-colors">
+          <div
+            className="cursor-pointer font-bold whitespace-nowrap px-10 py-4 text-fun-white border-2 text-xl rounded-full border-fun-white bg-bg hover:bg-fun-pink hover:text-white hover:border-fun-pink transition-colors"
+            onClick={handleClick}
+          >
             Tell me more
           </div>
         </ScrollLink>
       </div>
+
+      {showIcon && <KeepScrollingIcon />}
     </>
   );
 }
