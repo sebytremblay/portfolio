@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React from "react";
 import { footer } from "@/data/global";
-import Image from "next/image";
 
 function Footer() {
   return (
@@ -52,6 +51,8 @@ function Footer() {
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
                   width="26"
+                  height="26"
+                  alt="React"
                   title="React"
                 />
                 <span className="sr-only">React</span>
@@ -60,15 +61,19 @@ function Footer() {
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg"
                   width="40"
+                  height="40"
                   className="invert"
+                  alt="NextJS"
                   title="NextJS"
                 />
                 <span className="sr-only">NextJS</span>
               </span>
               <span>
                 <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"               
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
                   width="26"
+                  height="26"
+                  alt="TailwindCSS"
                   title="TailwindCSS"
                 />
                 <span className="sr-only">TailwindCSS</span>
@@ -94,10 +99,10 @@ function Footer() {
           target="_blank"
           rel="nooreferrer"
         >
-          <Image
+          <img
             src="/static/icons/github.svg"
-            width={16}
-            height={16}
+            width="16"
+            height="16"
             alt="Github Icon"
           />
           <span className="ml-2">View Source Code </span>

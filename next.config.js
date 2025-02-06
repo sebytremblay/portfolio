@@ -1,17 +1,9 @@
 module.exports = {
-  basePath: "",
-  assetPrefix: "/",
+  trailingSlash: true,
   output: "export",
   reactStrictMode: true,
-
   swcMinify: true,
-  async redirects() {
-    return [
-      {
-        source: '/blog',
-        destination: '/',
-        permanent: true,
-      },
-    ]
+  images: {
+    unoptimized: true,
   },
 };

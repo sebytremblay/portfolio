@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script>
+        // Get the current path and query string
+        const path = window.location.pathname;
+        const search = window.location.search;
+        const hash = window.location.hash;
+
+        // Single page apps for GitHub Pages
+        // MIT License
+        // https://github.com/rafgraph/spa-github-pages
+        (function (l) {
+            if (l.search[1] === '/') {
+                var decoded = l.search.slice(1).split('&').map(function (s) {
+                    return s.replace(/~and~/g, '&')
+                }).join('?');
+                window.history.replaceState(null, null,
+                    l.pathname.slice(0, -1) + decoded + l.hash
+                );
+            }
+        }(window.location));
+
+        // Store the full path in sessionStorage
+        const fullPath = path + search + hash;
+        sessionStorage.setItem('redirect', fullPath);
+
+        // Redirect to the root with the path as a query parameter
+        const encodedPath = encodeURIComponent(fullPath.replace(/^\//, ''));
+        window.location.href = '/?p=' + encodedPath;
+    </script>
+</head>
+
+<body>
+    <h1>Redirecting...</h1>
+    <p>If you are not redirected automatically, click <a href="/">here</a>.</p>
+</body>
+
+</html>
