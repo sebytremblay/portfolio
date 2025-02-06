@@ -10,12 +10,12 @@ interface BlogCardProps {
 
 function BlogCard({ post }: BlogCardProps) {
     const router = useRouter();
-    
+
     const handleClick = () => {
         if (post.type === "external") {
             window.open(post.link, "_blank");
         } else if (post.type === "pdf") {
-            router.push(`/blog/pdf/${post.id}`);
+            router.push(`/blog/id/${post.id}`);
         }
     };
 
