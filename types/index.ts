@@ -8,6 +8,17 @@ export type Project = {
   tags: string[];
 };
 
+export type BlogPost = {
+  id: number;
+  title: string;
+  description: string;
+  date: string;
+  type: "external" | "pdf" | "article";
+  link?: string;
+  content?: string;
+  tags: string[];
+};
+
 export type TCommonProps = {
   title?: string;
   name?: string;

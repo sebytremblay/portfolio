@@ -5,11 +5,7 @@ import Navbar from "../global/Navbar";
 import React, { ReactChildren } from "react";
 
 function Page({ currentPage, meta: { title, desc }, children }: PageProps) {
-  const pageTitle = `${
-    currentPage === "Home"
-      ? " Sebastian Tremblay - Full-Stack Developer."
-      : `${currentPage} - SebastianTremblay.io`
-  }`;
+  const pageTitle = currentPage;
   console.log(currentPage);
   return (
     <div
@@ -39,7 +35,7 @@ function Page({ currentPage, meta: { title, desc }, children }: PageProps) {
         <link rel="manifest" href="/static/favicon/site.webmanifest" />
         <meta name="title" content={pageTitle} />
         <meta name="description" content={desc} />
-        
+
         <script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
