@@ -31,7 +31,7 @@ function PDFViewerPage({ post }) {
 
     return (
         <Page
-            currentPage="blog"
+            currentPage="Blog"
             meta={{
                 title: post.title,
                 desc: post.description

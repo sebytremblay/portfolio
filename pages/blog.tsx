@@ -17,7 +17,7 @@ function BlogPage() {
                 <SectionTitle
                     title="Thoughts and Publications"
                 />
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-2">
                     {posts.map((post) => (
                         <BlogCard key={post.id} post={post} />
                     ))}
