@@ -29,12 +29,12 @@ export const routes: Route[] = [
     path: "/projects",
   },
   {
-    title: "Resume",
-    path: "/resume",
-  },
-  {
     title: "Blog",
     path: "/blog",
+  },
+  {
+    title: "Resume",
+    path: "/resume",
   }
 ];
 

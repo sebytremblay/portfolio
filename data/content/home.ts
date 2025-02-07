@@ -66,13 +66,23 @@ export const testimonials: Testimonial[] = [];
 
 export const experiences: TExperience[] = [
   {
+    title: "Founding Engineer",
+    companyName: "GitMarks",
+    icon: "/static/logos/git_marks.png",
+    iconBg: "#FFFFFF",
+    date: "September 2024 - Present",
+    points: [
+      "Led a 6-member team to drive the development of a full-stack grading platform for GitHub, helping expose students to industry-standard development workflows.",
+    ],
+  },
+  {
     title: "Software Engineering Intern",
     companyName: "Salesforce",
     icon: "/static/logos/salesforce.png",
     iconBg: "#ade0ed",
-    date: "May 2024 - Present",
+    date: "May 2024 - August 2024",
     points: [
-      "Led integration of management tools for Intelligent Document Processing executions into the MuleSoft admin console.",
+      "Designed and implemented management tools for the Intelligent Document Processing service, integrating them into the MuleSoft admin console.",
     ],
   },
   {
@@ -82,7 +92,7 @@ export const experiences: TExperience[] = [
     iconBg: "#C7B2D7",
     date: "July 2023 - December 2023",
     points: [
-        "Developed and supported internal software for our manufacturing team, helping streamline product quality testing.",
+      "Developed and supported internal software for our manufacturing team, helping streamline product quality testing.",
     ],
   },
   {
