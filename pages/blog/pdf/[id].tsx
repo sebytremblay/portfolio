@@ -1,15 +1,30 @@
 import React from "react";
-import { useRouter } from "next/router";
 import Page from "@/components/utility/Page";
 import PDFViewer from "@/components/blog/PDFViewer";
 import posts from "@/data/content/blog";
+import { GetStaticProps, GetStaticPaths } from "next";
 
-function PDFViewerPage() {
-    const router = useRouter();
-    const { id } = router.query;
+export const getStaticPaths: GetStaticPaths = async () => {
+    const pdfPosts = posts.filter(post => post.type === "pdf");
+    const paths = pdfPosts.map((post) => ({
+        params: { id: post.id.toString() },
+    }));
+    return {
+        paths,
+        fallback: false,
+    };
+};
 
-    const post = posts.find(p => p.id === Number(id));
+export const getStaticProps: GetStaticProps = async ({ params }: { params: { id: string } }) => {
+    const post = posts.find(p => p.id === Number(params.id));
+    return {
+        props: JSON.parse(JSON.stringify({
+            post,
+        })),
+    };
+};
 
+function PDFViewerPage({ post }) {
     if (!post || post.type !== "pdf") {
         return <div>Post not found</div>;
     }
@@ -30,4 +45,4 @@ function PDFViewerPage() {
     );
 }
 
-export default PDFViewerPage; 
+export default PDFViewerPage;

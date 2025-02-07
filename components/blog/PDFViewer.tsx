@@ -73,7 +73,7 @@ function PDFViewer({ pdfUrl }: PDFViewerProps) {
                     <button
                         onClick={handlePrevPage}
                         disabled={pageNumber <= INITIAL_PAGE}
-                        className="px-4 py-2 bg-fun-pink-darker text-fun-pink rounded hover:bg-fun-pink hover:text-white transition-colors disabled:opacity-50"
+                        className="btn max-w-xs bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center transition-colors disabled:opacity-50"
                     >
                         Previous
                     </button>
@@ -83,7 +83,7 @@ function PDFViewer({ pdfUrl }: PDFViewerProps) {
                     <button
                         onClick={handleNextPage}
                         disabled={pageNumber >= numPages}
-                        className="px-4 py-2 bg-fun-pink-darker text-fun-pink rounded hover:bg-fun-pink hover:text-white transition-colors disabled:opacity-50"
+                        className="btn max-w-xs bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center transition-colors disabled:opacity-50"
                     >
                         Next
                     </button>

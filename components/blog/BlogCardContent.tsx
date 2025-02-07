@@ -7,10 +7,10 @@ interface BlogCardContentProps {
 
 function BlogCardContent({ post }: BlogCardContentProps) {
     return (
-        <div>
+        <div className="text-left">
             <h3 className="text-xl font-bold mb-2 text-fun-pink">{post.title}</h3>
             <p className="text-fun-gray">{post.description}</p>
-            <div className="flex flex-wrap gap-2 mt-3">
+            <div className="flex flex-wrap gap-2 mt-3 pt-4">
                 {post.tags.map((tag, index) => (
                     <span
                         key={index}
