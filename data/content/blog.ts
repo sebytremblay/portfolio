@@ -9,6 +9,15 @@ const posts: BlogPost[] = [
         type: "pdf",
         link: "/static/papers/kubernetes-scheduling.pdf",
         tags: ["Kubernetes", "Distributed Systems", "Orchestration"]
+    },
+    {
+        id: 2,
+        title: "Cutting Edge Facial Detection: Vision Transfomers vs. Convolutional Neural Networks",
+        description: "A comparison of vision transformers and convolutional neural networks for facial detection, exploring their performance and efficiency in real-time applications.",
+        date: "2025-04-15",
+        type: "pdf",
+        link: "/static/papers/facial-detection.pdf",
+        tags: ["Facial Detection", "Vision Transformers", "Convolutional Neural Networks"]
     }
 ];
 

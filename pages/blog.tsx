@@ -18,9 +18,11 @@ function BlogPage() {
                     title="Thoughts and Publications"
                 />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-2">
-                    {posts.map((post) => (
-                        <BlogCard key={post.id} post={post} />
-                    ))}
+                    {posts
+                        .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+                        .map((post) => (
+                            <BlogCard key={post.id} post={post} />
+                        ))}
                 </div>
             </div>
         </Page>
