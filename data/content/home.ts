@@ -66,7 +66,7 @@ export const testimonials: Testimonial[] = [];
 
 export const experiences: TExperience[] = [
   {
-    title: "Founding Engineer",
+    title: "Founder",
     companyName: "GitMarks",
     icon: "/static/logos/git_marks.png",
     iconBg: "#FFFFFF",

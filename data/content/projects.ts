@@ -44,13 +44,6 @@ const projects: Project[] = [
     github: "https://github.com/sebytremblay/2048Game",
     tags: ["React", "Typescript", "MongoDB", "REST API"],
   },
-  {
-    title: "Student Organization Portal",
-    desc: "A portal for student organizations to manage their members and events.",
-    img: "/static/projects/student-org-manager.png",
-    github: "https://github.com/sebytremblay/student-org-manager",
-    tags: ["Python", "MySQL", "Flask", "Appsmith"],
-  }
 ].map((project, index) => ({ ...project, id: index }));
 
 export const allTags = []
