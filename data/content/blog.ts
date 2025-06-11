@@ -18,6 +18,15 @@ const posts: BlogPost[] = [
         type: "pdf",
         link: "/static/papers/facial-detection.pdf",
         tags: ["Facial Detection", "Vision Transformers", "Convolutional Neural Networks"]
+    },
+    {
+        id: 3,
+        title: "Evaluation of Search-Based Algorithms for Solving Wordle",
+        description: "A comparison of search-based algorithms for solving Wordle, exploring their performance and efficiency in real-time applications.",
+        date: "2025-04-22",
+        type: "pdf",
+        link: "/static/papers/wordle-search.pdf",
+        tags: ["Monte Carlo", "Search-Based Algorithms", "Performance"]
     }
 ];
 
