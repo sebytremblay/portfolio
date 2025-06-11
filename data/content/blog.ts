@@ -25,7 +25,7 @@ const posts: BlogPost[] = [
         description: "A comparison of search-based algorithms for solving Wordle, exploring their performance and efficiency in real-time applications.",
         date: "2025-04-22",
         type: "pdf",
-        link: "/static/papers/wordle-search.pdf",
+        link: "/static/papers/wordle-solvers.pdf",
         tags: ["Monte Carlo", "Search-Based Algorithms", "Performance"]
     }
 ];
