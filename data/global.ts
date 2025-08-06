@@ -32,10 +32,10 @@ export const routes: Route[] = [
     title: "Blog",
     path: "/blog",
   },
-  {
-    title: "Resume",
-    path: "/resume",
-  }
+  // {
+  //   title: "Resume",
+  //   path: "/resume",
+  // }
 ];
 
 export const socials = {
