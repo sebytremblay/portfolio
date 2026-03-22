@@ -66,18 +66,18 @@ export const testimonials: Testimonial[] = [];
 
 export const experiences: TExperience[] = [
   {
-    title: "Software Engineer -- Agentic Registry",
-    companyName: "Salesforce",
+    title: "Software Engineer",
+    companyName: "Salesforce, Agentic Registry",
     icon: "/static/logos/salesforce.png",
     iconBg: "#ade0ed",
-    date: "2025 -- Present",
+    date: "2025 - Present",
     points: [
       "Architected and launched the Public MCP Registry to solve fragmented discovery of thousands of MCP servers.",
     ],
   },
   {
-    title: "Software Engineer -- Intelligent Document Processing",
-    companyName: "Salesforce",
+    title: "Software Engineer",
+    companyName: "Salesforce, Intelligent Document Processing",
     icon: "/static/logos/salesforce.png",
     iconBg: "#ade0ed",
     date: "2024",
@@ -90,7 +90,7 @@ export const experiences: TExperience[] = [
     companyName: "GitMarks",
     icon: "/static/logos/git_marks.png",
     iconBg: "#FFFFFF",
-    date: "September 2024 - Present",
+    date: "2024",
     points: [
       "Led a 6-member team to drive the development of a full-stack grading platform for GitHub, helping expose students to industry-standard development workflows.",
     ],
