@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="brainGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6aaa64;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#538d4e;stop-opacity:0.9" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.04">
+    <line x1="0" y1="80" x2="600" y2="80" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="160" x2="600" y2="160" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="240" x2="600" y2="240" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="320" x2="600" y2="320" stroke="#fff" stroke-width="1"/>
+    <line x1="120" y1="0" x2="120" y2="400" stroke="#fff" stroke-width="1"/>
+    <line x1="240" y1="0" x2="240" y2="400" stroke="#fff" stroke-width="1"/>
+    <line x1="360" y1="0" x2="360" y2="400" stroke="#fff" stroke-width="1"/>
+    <line x1="480" y1="0" x2="480" y2="400" stroke="#fff" stroke-width="1"/>
+  </g>
+
+  <!-- Wordle Grid - Row 1: CRANE (mixed feedback) -->
+  <g transform="translate(60, 55)" filter="url(#softShadow)">
+    <!-- C - gray -->
+    <rect x="0" y="0" width="52" height="52" rx="4" fill="#3a3a4c" stroke="#555" stroke-width="1"/>
+    <text x="26" y="35" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#fff">C</text>
+    <!-- R - yellow -->
+    <rect x="58" y="0" width="52" height="52" rx="4" fill="#b59f3b" stroke="#c9b458" stroke-width="1"/>
+    <text x="84" y="35" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#fff">R</text>
+    <!-- A - green -->
+    <rect x="116" y="0" width="52" height="52" rx="4" fill="#538d4e" stroke="#6aaa64" stroke-width="1"/>
+    <text x="142" y="35" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#fff">A</text>
+    <!-- N - gray -->
+    <rect x="174" y="0" width="52" height="52" rx="4" fill="#3a3a4c" stroke="#555" stroke-width="1"/>
+    <text x="200" y="35" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#fff">N</text>
+    <!-- E - yellow -->
+    <rect x="232" y="0" width="52" height="52" rx="4" fill="#b59f3b" stroke="#c9b458" stroke-width="1"/>
+    <text x="258" y="35" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#fff">E</text>
+  </g>
+
+  <!-- Row 2: STARE -->
+  <g transform="translate(60, 115)" filter="url(#softShadow)">
+    <rect x="0" y="0" width="52" height="52" rx="4" fill="#538d4e" stroke="#6aaa64" stroke-width="1"/>
+    <text x="26" y="35" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#fff">S</text>
+    <rect x="58" y="0" width="52" height="52" rx="4" fill="#3a3a4c" stroke="#555" stroke-width="1"/>
+    <text x="84" y="35" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#fff">T</text>
+    <rect x="116" y="0" width="52" height="52" rx="4" fill="#538d4e" stroke="#6aaa64" stroke-width="1"/>
+    <text x="142" y="35" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#fff">A</text>
+    <rect x="174" y="0" width="52" height="52" rx="4" fill="#b59f3b" stroke="#c9b458" stroke-width="1"/>
+    <text x="200" y="35" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#fff">R</text>
+    <rect x="232" y="0" width="52" height="52" rx="4" fill="#538d4e" stroke="#6aaa64" stroke-width="1"/>
+    <text x="258" y="35" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#fff">E</text>
+  </g>
+
+  <!-- Row 3: SHARE (all green - solved!) -->
+  <g transform="translate(60, 175)" filter="url(#softShadow)">
+    <rect x="0" y="0" width="52" height="52" rx="4" fill="#538d4e" stroke="#6aaa64" stroke-width="1"/>
+    <text x="26" y="35" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#fff">S</text>
+    <rect x="58" y="0" width="52" height="52" rx="4" fill="#538d4e" stroke="#6aaa64" stroke-width="1"/>
+    <text x="84" y="35" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#fff">H</text>
+    <rect x="116" y="0" width="52" height="52" rx="4" fill="#538d4e" stroke="#6aaa64" stroke-width="1"/>
+    <text x="142" y="35" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#fff">A</text>
+    <rect x="174" y="0" width="52" height="52" rx="4" fill="#538d4e" stroke="#6aaa64" stroke-width="1"/>
+    <text x="200" y="35" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#fff">R</text>
+    <rect x="232" y="0" width="52" height="52" rx="4" fill="#538d4e" stroke="#6aaa64" stroke-width="1"/>
+    <text x="258" y="35" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#fff">E</text>
+  </g>
+
+  <!-- Empty rows (remaining guesses) -->
+  <g transform="translate(60, 235)" opacity="0.3">
+    <rect x="0" y="0" width="52" height="52" rx="4" fill="none" stroke="#555" stroke-width="1.5"/>
+    <rect x="58" y="0" width="52" height="52" rx="4" fill="none" stroke="#555" stroke-width="1.5"/>
+    <rect x="116" y="0" width="52" height="52" rx="4" fill="none" stroke="#555" stroke-width="1.5"/>
+    <rect x="174" y="0" width="52" height="52" rx="4" fill="none" stroke="#555" stroke-width="1.5"/>
+    <rect x="232" y="0" width="52" height="52" rx="4" fill="none" stroke="#555" stroke-width="1.5"/>
+  </g>
+
+  <!-- AI Brain / Circuit icon on the right side -->
+  <g transform="translate(430, 80)">
+    <!-- Brain outline -->
+    <g filter="url(#glow)">
+      <!-- Brain shape using paths -->
+      <ellipse cx="70" cy="70" rx="60" ry="65" fill="none" stroke="url(#brainGrad)" stroke-width="2.5" opacity="0.8"/>
+
+      <!-- Brain folds -->
+      <path d="M 70 15 C 70 15, 45 30, 45 55 C 45 75, 55 85, 70 85" fill="none" stroke="#6aaa64" stroke-width="1.8" opacity="0.6"/>
+      <path d="M 70 15 C 70 15, 95 30, 95 55 C 95 75, 85 85, 70 85" fill="none" stroke="#6aaa64" stroke-width="1.8" opacity="0.6"/>
+      <path d="M 35 55 C 35 55, 55 50, 70 55 C 85 60, 105 55, 105 55" fill="none" stroke="#6aaa64" stroke-width="1.5" opacity="0.5"/>
+
+      <!-- Neural network nodes -->
+      <circle cx="50" cy="45" r="5" fill="#6aaa64" opacity="0.9"/>
+      <circle cx="90" cy="45" r="5" fill="#c9b458" opacity="0.9"/>
+      <circle cx="70" cy="65" r="6" fill="#6aaa64" opacity="0.9"/>
+      <circle cx="55" cy="80" r="4" fill="#c9b458" opacity="0.8"/>
+      <circle cx="85" cy="80" r="4" fill="#6aaa64" opacity="0.8"/>
+      <circle cx="70" cy="35" r="4" fill="#c9b458" opacity="0.8"/>
+
+      <!-- Neural connections -->
+      <line x1="50" y1="45" x2="70" y2="65" stroke="#6aaa64" stroke-width="1" opacity="0.5"/>
+      <line x1="90" y1="45" x2="70" y2="65" stroke="#c9b458" stroke-width="1" opacity="0.5"/>
+      <line x1="70" y1="65" x2="55" y2="80" stroke="#6aaa64" stroke-width="1" opacity="0.5"/>
+      <line x1="70" y1="65" x2="85" y2="80" stroke="#c9b458" stroke-width="1" opacity="0.5"/>
+      <line x1="50" y1="45" x2="70" y2="35" stroke="#c9b458" stroke-width="1" opacity="0.5"/>
+      <line x1="90" y1="45" x2="70" y2="35" stroke="#6aaa64" stroke-width="1" opacity="0.5"/>
+      <line x1="50" y1="45" x2="55" y2="80" stroke="#6aaa64" stroke-width="0.8" opacity="0.3"/>
+      <line x1="90" y1="45" x2="85" y2="80" stroke="#c9b458" stroke-width="0.8" opacity="0.3"/>
+    </g>
+  </g>
+
+  <!-- Connection arrows from brain to grid -->
+  <g opacity="0.4">
+    <path d="M 410 140 C 380 140, 360 140, 340 140" fill="none" stroke="#6aaa64" stroke-width="1.5" stroke-dasharray="6,4"/>
+    <polygon points="340,137 330,140 340,143" fill="#6aaa64"/>
+  </g>
+
+  <!-- Algorithm labels below brain -->
+  <g transform="translate(430, 190)">
+    <rect x="10" y="0" width="120" height="24" rx="12" fill="#538d4e" opacity="0.25"/>
+    <text x="70" y="16" text-anchor="middle" font-family="'SF Mono', 'Fira Code', monospace" font-size="10" fill="#6aaa64" font-weight="600">MCTS</text>
+
+    <rect x="10" y="30" width="120" height="24" rx="12" fill="#b59f3b" opacity="0.2"/>
+    <text x="70" y="46" text-anchor="middle" font-family="'SF Mono', 'Fira Code', monospace" font-size="10" fill="#c9b458" font-weight="600">MINIMAX</text>
+
+    <rect x="10" y="60" width="120" height="24" rx="12" fill="#538d4e" opacity="0.25"/>
+    <text x="70" y="76" text-anchor="middle" font-family="'SF Mono', 'Fira Code', monospace" font-size="10" fill="#6aaa64" font-weight="600">INFO THEORY</text>
+  </g>
+
+  <!-- Title area at bottom -->
+  <g transform="translate(0, 330)">
+    <rect x="0" y="0" width="600" height="70" fill="#0f0f1a" opacity="0.6"/>
+    <text x="300" y="32" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff" letter-spacing="3">WORDLE SOLVER</text>
+    <text x="300" y="54" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#8a8a9a" letter-spacing="2">MCTS  /  MINIMAX  /  INFORMATION GAIN</text>
+  </g>
+
+  <!-- Decorative corner accents -->
+  <path d="M 0 12 L 0 0 L 12 0" fill="none" stroke="#6aaa64" stroke-width="2" opacity="0.4" transform="translate(8,8)"/>
+  <path d="M 0 -12 L 0 0 L -12 0" fill="none" stroke="#6aaa64" stroke-width="2" opacity="0.4" transform="translate(592,392)"/>
+</svg>

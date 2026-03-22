@@ -3,6 +3,41 @@ import { Project } from "types";
 
 const projects: Project[] = [
   {
+    title: "Graph Theory Arbitrage",
+    desc: "Prediction market arbitrage system using graph theory, SAT solving, and real-time WebSocket execution.",
+    img: "/static/projects/graph-theory-arbitrage.svg",
+    github: "https://github.com/sebytremblay/graph-theory-trading",
+    tags: ["Python", "Graph Theory", "Prediction Markets", "NetworkX", "WebSockets", "SAT Solving", "React"],
+  },
+  {
+    title: "Code Review Decomposition Service",
+    desc: "AI-powered LangGraph pipeline that decomposes PRs into reviewable tasks.",
+    img: "/static/projects/code-review-decomposition.svg",
+    github: "https://github.com/sebytremblay/commits",
+    tags: ["TypeScript", "LangGraph", "Next.js", "Anthropic Claude", "Tree-sitter", "Prisma"],
+  },
+  {
+    title: "Surface Plugin",
+    desc: "Claude Code plugin that turns AI session transcripts into structured PR descriptions.",
+    img: "/static/projects/surface-plugin.svg",
+    github: "https://github.com/sebytremblay/commits",
+    tags: ["Python", "Claude Code", "Git", "Plugins"],
+  },
+  {
+    title: "Standup Plugin",
+    desc: "Claude Code plugin that generates standup-ready status updates from session traces.",
+    img: "/static/projects/standup-plugin.svg",
+    github: "https://github.com/AlexanderBZ/claude-status-update",
+    tags: ["Python", "Claude Code", "Git", "CLI", "NLP"],
+  },
+  {
+    title: "Wordle Bot",
+    desc: "AI-powered Wordle solver using MCTS, minimax, and information theory.",
+    img: "/static/projects/wordle-bot.svg",
+    github: "https://github.com/sebytremblay/wordle_bot",
+    tags: ["Python", "React", "TypeScript", "Flask", "Monte Carlo Tree Search", "Supabase"],
+  },
+  {
     title: "Automated Attendance Tracker",
     desc: "Automatically tracks appearances using facial recognition.",
     img: "/static/projects/attendance-assistant.png",

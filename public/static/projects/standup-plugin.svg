@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f1729;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a2744;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#172033;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0.3" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#bg)"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.04" stroke="#94a3b8" stroke-width="0.5">
+    <line x1="0" y1="80" x2="600" y2="80"/>
+    <line x1="0" y1="160" x2="600" y2="160"/>
+    <line x1="0" y1="240" x2="600" y2="240"/>
+    <line x1="0" y1="320" x2="600" y2="320"/>
+    <line x1="120" y1="0" x2="120" y2="400"/>
+    <line x1="240" y1="0" x2="240" y2="400"/>
+    <line x1="360" y1="0" x2="360" y2="400"/>
+    <line x1="480" y1="0" x2="480" y2="400"/>
+  </g>
+
+  <!-- Timeline line (horizontal) -->
+  <rect x="40" y="108" width="200" height="2" rx="1" fill="url(#accentLine)" filter="url(#glow)"/>
+  <rect x="40" y="108" width="200" height="2" rx="1" fill="url(#glowGrad)"/>
+
+  <!-- Git commit dots on timeline -->
+  <circle cx="60" cy="109" r="5" fill="#10b981" filter="url(#glow)"/>
+  <circle cx="105" cy="109" r="4" fill="#10b981" opacity="0.8"/>
+  <circle cx="140" cy="109" r="5" fill="#14b8a6" filter="url(#glow)"/>
+  <circle cx="175" cy="109" r="3.5" fill="#06b6d4" opacity="0.7"/>
+  <circle cx="220" cy="109" r="5" fill="#06b6d4" filter="url(#glow)"/>
+
+  <!-- Small commit message snippets near dots -->
+  <text x="60" y="92" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="8" text-anchor="middle">fix auth</text>
+  <text x="140" y="92" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="8" text-anchor="middle">add toggle</text>
+  <text x="220" y="92" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="8" text-anchor="middle">refactor</text>
+
+  <!-- Clock icon (top right area) -->
+  <g transform="translate(510, 55)">
+    <circle cx="0" cy="0" r="18" fill="none" stroke="#10b981" stroke-width="1.5" opacity="0.6"/>
+    <line x1="0" y1="0" x2="0" y2="-10" stroke="#10b981" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+    <line x1="0" y1="0" x2="7" y2="3" stroke="#10b981" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+    <text x="0" y="35" fill="#475569" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" text-anchor="middle">24h window</text>
+  </g>
+
+  <!-- Arrow from timeline to card -->
+  <path d="M 150 118 L 150 148" stroke="#10b981" stroke-width="1.5" opacity="0.4" stroke-dasharray="3,3"/>
+  <polygon points="146,146 154,146 150,154" fill="#10b981" opacity="0.4"/>
+
+  <!-- Main summary card -->
+  <rect x="36" y="155" width="340" height="210" rx="10" fill="url(#cardGrad)" stroke="#2d3f5e" stroke-width="1" filter="url(#softShadow)"/>
+
+  <!-- Card accent top bar -->
+  <rect x="36" y="155" width="340" height="3" rx="1.5" fill="url(#accentLine)"/>
+
+  <!-- Card content: exec summary -->
+  <text x="56" y="185" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600">Status Update</text>
+  <text x="56" y="205" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9">Authentication refactored. Dark mode added.</text>
+
+  <!-- Bugs section -->
+  <rect x="56" y="222" width="6" height="6" rx="1" fill="#f87171"/>
+  <text x="70" y="228" fill="#f87171" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" font-weight="600">Bugs</text>
+  <text x="56" y="244" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9">- Fix login timeout on expired tokens</text>
+
+  <!-- Features section -->
+  <rect x="56" y="260" width="6" height="6" rx="1" fill="#10b981"/>
+  <text x="70" y="266" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" font-weight="600">Features</text>
+  <text x="56" y="282" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9">- Add dark mode toggle to settings</text>
+  <text x="56" y="296" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9">- Implement user preference persistence</text>
+
+  <!-- Refactors section -->
+  <rect x="56" y="312" width="6" height="6" rx="1" fill="#06b6d4"/>
+  <text x="70" y="318" fill="#06b6d4" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" font-weight="600">Refactors</text>
+  <text x="56" y="334" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9">- Extract auth middleware into module</text>
+
+  <!-- Right panel: terminal/command preview -->
+  <rect x="400" y="118" width="170" height="247" rx="8" fill="#0d1117" stroke="#2d3f5e" stroke-width="1" filter="url(#softShadow)"/>
+
+  <!-- Terminal dots -->
+  <circle cx="414" cy="132" r="3.5" fill="#f87171"/>
+  <circle cx="425" cy="132" r="3.5" fill="#fbbf24"/>
+  <circle cx="436" cy="132" r="3.5" fill="#10b981"/>
+
+  <!-- Terminal content -->
+  <text x="414" y="158" fill="#06b6d4" font-family="'SF Mono', Monaco, 'Cascadia Code', monospace" font-size="9">$</text>
+  <text x="424" y="158" fill="#e2e8f0" font-family="'SF Mono', Monaco, 'Cascadia Code', monospace" font-size="9">/status-update</text>
+
+  <text x="414" y="180" fill="#475569" font-family="'SF Mono', Monaco, 'Cascadia Code', monospace" font-size="8">Parsing sessions...</text>
+
+  <text x="414" y="200" fill="#475569" font-family="'SF Mono', Monaco, 'Cascadia Code', monospace" font-size="8">Extracting signals</text>
+
+  <!-- Animated-looking progress dots -->
+  <text x="414" y="220" fill="#10b981" font-family="'SF Mono', Monaco, 'Cascadia Code', monospace" font-size="8">3 sessions found</text>
+  <text x="414" y="240" fill="#10b981" font-family="'SF Mono', Monaco, 'Cascadia Code', monospace" font-size="8">7 work items</text>
+
+  <!-- Separator line in terminal -->
+  <line x1="414" y1="252" x2="556" y2="252" stroke="#2d3f5e" stroke-width="0.5"/>
+
+  <text x="414" y="270" fill="#475569" font-family="'SF Mono', Monaco, 'Cascadia Code', monospace" font-size="7">signals.json</text>
+  <text x="414" y="284" fill="#10b981" font-family="'SF Mono', Monaco, 'Cascadia Code', monospace" font-size="7">classify + summarize</text>
+
+  <!-- Check mark -->
+  <text x="414" y="310" fill="#10b981" font-family="'SF Mono', Monaco, 'Cascadia Code', monospace" font-size="10">Done</text>
+  <polyline points="445,304 449,309 457,299" fill="none" stroke="#10b981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <text x="414" y="330" fill="#475569" font-family="'SF Mono', Monaco, 'Cascadia Code', monospace" font-size="7">standup ready</text>
+  <rect x="414" y="336" width="50" height="2" rx="1" fill="url(#accentLine)" opacity="0.5"/>
+
+  <!-- Bottom label -->
+  <text x="300" y="388" fill="#475569" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" text-anchor="middle" font-weight="500">Claude Code Status Update Plugin</text>
+</svg>

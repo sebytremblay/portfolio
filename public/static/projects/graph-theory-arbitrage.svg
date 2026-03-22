@@ -1,0 +1,240 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <!-- Dark gradient background -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e1a"/>
+      <stop offset="50%" style="stop-color:#0f1629"/>
+      <stop offset="100%" style="stop-color:#0a0e1a"/>
+    </linearGradient>
+
+    <!-- Gold/amber gradient for highlights -->
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d4a843"/>
+      <stop offset="100%" style="stop-color:#f0c040"/>
+    </linearGradient>
+
+    <!-- Arbitrage path glow -->
+    <linearGradient id="arbPath" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#22c55e"/>
+      <stop offset="50%" style="stop-color:#4ade80"/>
+      <stop offset="100%" style="stop-color:#22c55e"/>
+    </linearGradient>
+
+    <!-- Node gradient -->
+    <radialGradient id="nodeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#d4a843;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#d4a843;stop-opacity:0"/>
+    </radialGradient>
+
+    <!-- Green node glow for arbitrage nodes -->
+    <radialGradient id="arbNodeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#22c55e;stop-opacity:0.35"/>
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:0"/>
+    </radialGradient>
+
+    <!-- Subtle grid pattern -->
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1a2240" stroke-width="0.5"/>
+    </pattern>
+
+    <!-- Glow filter -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Soft glow filter -->
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Arrow marker for arbitrage path -->
+    <marker id="arrowGreen" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#4ade80" opacity="0.9"/>
+    </marker>
+
+    <!-- Arrow marker for regular edges -->
+    <marker id="arrowGold" markerWidth="6" markerHeight="4" refX="6" refY="2" orient="auto">
+      <path d="M0,0 L6,2 L0,4" fill="#d4a843" opacity="0.4"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <rect width="600" height="400" fill="url(#grid)" opacity="0.4"/>
+
+  <!-- Ambient glow spots -->
+  <circle cx="150" cy="180" r="120" fill="#d4a843" opacity="0.02"/>
+  <circle cx="450" cy="220" r="140" fill="#22c55e" opacity="0.015"/>
+  <circle cx="300" cy="100" r="100" fill="#6366f1" opacity="0.02"/>
+
+  <!-- === GRAPH EDGES (non-arbitrage, subtle) === -->
+  <!-- Cluster 1 internal edges -->
+  <line x1="95" y1="135" x2="148" y2="195" stroke="#2a3a6a" stroke-width="1" opacity="0.5"/>
+  <line x1="95" y1="135" x2="55" y2="210" stroke="#2a3a6a" stroke-width="1" opacity="0.4"/>
+  <line x1="148" y1="195" x2="55" y2="210" stroke="#2a3a6a" stroke-width="1" opacity="0.4"/>
+  <line x1="55" y1="210" x2="105" y2="280" stroke="#2a3a6a" stroke-width="1" opacity="0.35"/>
+  <line x1="148" y1="195" x2="105" y2="280" stroke="#2a3a6a" stroke-width="1" opacity="0.3"/>
+
+  <!-- Cluster 2 internal edges -->
+  <line x1="280" y1="85" x2="340" y2="140" stroke="#2a3a6a" stroke-width="1" opacity="0.5"/>
+  <line x1="340" y1="140" x2="250" y2="170" stroke="#2a3a6a" stroke-width="1" opacity="0.4"/>
+  <line x1="280" y1="85" x2="250" y2="170" stroke="#2a3a6a" stroke-width="1" opacity="0.4"/>
+  <line x1="340" y1="140" x2="380" y2="85" stroke="#2a3a6a" stroke-width="1" opacity="0.35"/>
+
+  <!-- Cluster 3 internal edges -->
+  <line x1="460" y1="175" x2="520" y2="235" stroke="#2a3a6a" stroke-width="1" opacity="0.5"/>
+  <line x1="520" y1="235" x2="545" y2="155" stroke="#2a3a6a" stroke-width="1" opacity="0.4"/>
+  <line x1="460" y1="175" x2="545" y2="155" stroke="#2a3a6a" stroke-width="1" opacity="0.35"/>
+  <line x1="520" y1="235" x2="490" y2="310" stroke="#2a3a6a" stroke-width="1" opacity="0.3"/>
+
+  <!-- Cross-cluster edges (very subtle) -->
+  <line x1="148" y1="195" x2="250" y2="170" stroke="#1e2d55" stroke-width="0.7" opacity="0.3" stroke-dasharray="4,4"/>
+  <line x1="340" y1="140" x2="460" y2="175" stroke="#1e2d55" stroke-width="0.7" opacity="0.3" stroke-dasharray="4,4"/>
+  <line x1="105" y1="280" x2="310" y2="300" stroke="#1e2d55" stroke-width="0.7" opacity="0.2" stroke-dasharray="4,4"/>
+
+  <!-- === ARBITRAGE PATH (bright green, glowing, with arrows) === -->
+  <!-- Path: Node A (95,135) -> Node B (280,85) -> Node C (460,175) -> implied back -->
+  <path d="M 102,135 L 272,88" stroke="#4ade80" stroke-width="2.5" fill="none" opacity="0.8" marker-end="url(#arrowGreen)" filter="url(#glow)"/>
+  <path d="M 288,88 L 452,172" stroke="#4ade80" stroke-width="2.5" fill="none" opacity="0.8" marker-end="url(#arrowGreen)" filter="url(#glow)"/>
+  <path d="M 456,182 Q 300,330 102,142" stroke="#4ade80" stroke-width="2" fill="none" opacity="0.5" stroke-dasharray="6,3" marker-end="url(#arrowGreen)" filter="url(#glow)"/>
+
+  <!-- Edge weight labels on arbitrage path -->
+  <rect x="170" y="95" width="36" height="16" rx="3" fill="#0f1629" stroke="#4ade80" stroke-width="0.5" opacity="0.9"/>
+  <text x="188" y="106" fill="#4ade80" font-family="monospace" font-size="9" text-anchor="middle" font-weight="bold">0.42</text>
+
+  <rect x="370" y="115" width="36" height="16" rx="3" fill="#0f1629" stroke="#4ade80" stroke-width="0.5" opacity="0.9"/>
+  <text x="388" y="126" fill="#4ade80" font-family="monospace" font-size="9" text-anchor="middle" font-weight="bold">0.31</text>
+
+  <rect x="248" y="260" width="36" height="16" rx="3" fill="#0f1629" stroke="#4ade80" stroke-width="0.5" opacity="0.9"/>
+  <text x="266" y="271" fill="#4ade80" font-family="monospace" font-size="9" text-anchor="middle" font-weight="bold">0.27</text>
+
+  <!-- === GRAPH NODES === -->
+  <!-- Cluster 1 (Markets cluster) -->
+  <circle cx="95" cy="135" r="22" fill="url(#arbNodeGlow)"/>
+  <circle cx="95" cy="135" r="8" fill="#0f1629" stroke="#4ade80" stroke-width="2"/>
+  <circle cx="95" cy="135" r="3" fill="#4ade80"/>
+
+  <circle cx="148" cy="195" r="16" fill="url(#nodeGlow)"/>
+  <circle cx="148" cy="195" r="6" fill="#0f1629" stroke="#d4a843" stroke-width="1.5"/>
+  <circle cx="148" cy="195" r="2.5" fill="#d4a843"/>
+
+  <circle cx="55" cy="210" r="14" fill="url(#nodeGlow)"/>
+  <circle cx="55" cy="210" r="5" fill="#0f1629" stroke="#d4a843" stroke-width="1.2"/>
+  <circle cx="55" cy="210" r="2" fill="#d4a843"/>
+
+  <circle cx="105" cy="280" r="14" fill="url(#nodeGlow)"/>
+  <circle cx="105" cy="280" r="5" fill="#0f1629" stroke="#d4a843" stroke-width="1.2"/>
+  <circle cx="105" cy="280" r="2" fill="#d4a843"/>
+
+  <!-- Cluster 2 (Analysis cluster) -->
+  <circle cx="280" cy="85" r="22" fill="url(#arbNodeGlow)"/>
+  <circle cx="280" cy="85" r="8" fill="#0f1629" stroke="#4ade80" stroke-width="2"/>
+  <circle cx="280" cy="85" r="3" fill="#4ade80"/>
+
+  <circle cx="340" cy="140" r="16" fill="url(#nodeGlow)"/>
+  <circle cx="340" cy="140" r="6" fill="#0f1629" stroke="#d4a843" stroke-width="1.5"/>
+  <circle cx="340" cy="140" r="2.5" fill="#d4a843"/>
+
+  <circle cx="250" cy="170" r="14" fill="url(#nodeGlow)"/>
+  <circle cx="250" cy="170" r="5" fill="#0f1629" stroke="#d4a843" stroke-width="1.2"/>
+  <circle cx="250" cy="170" r="2" fill="#d4a843"/>
+
+  <circle cx="380" cy="85" r="12" fill="url(#nodeGlow)"/>
+  <circle cx="380" cy="85" r="4.5" fill="#0f1629" stroke="#d4a843" stroke-width="1"/>
+  <circle cx="380" cy="85" r="1.8" fill="#d4a843"/>
+
+  <!-- Cluster 3 (Execution cluster) -->
+  <circle cx="460" cy="175" r="22" fill="url(#arbNodeGlow)"/>
+  <circle cx="460" cy="175" r="8" fill="#0f1629" stroke="#4ade80" stroke-width="2"/>
+  <circle cx="460" cy="175" r="3" fill="#4ade80"/>
+
+  <circle cx="520" cy="235" r="16" fill="url(#nodeGlow)"/>
+  <circle cx="520" cy="235" r="6" fill="#0f1629" stroke="#d4a843" stroke-width="1.5"/>
+  <circle cx="520" cy="235" r="2.5" fill="#d4a843"/>
+
+  <circle cx="545" cy="155" r="12" fill="url(#nodeGlow)"/>
+  <circle cx="545" cy="155" r="4.5" fill="#0f1629" stroke="#d4a843" stroke-width="1"/>
+  <circle cx="545" cy="155" r="1.8" fill="#d4a843"/>
+
+  <circle cx="490" cy="310" r="14" fill="url(#nodeGlow)"/>
+  <circle cx="490" cy="310" r="5" fill="#0f1629" stroke="#d4a843" stroke-width="1.2"/>
+  <circle cx="490" cy="310" r="2" fill="#d4a843"/>
+
+  <!-- Additional scattered nodes for depth -->
+  <circle cx="310" cy="300" r="12" fill="url(#nodeGlow)"/>
+  <circle cx="310" cy="300" r="4.5" fill="#0f1629" stroke="#d4a843" stroke-width="1"/>
+  <circle cx="310" cy="300" r="1.8" fill="#d4a843"/>
+
+  <circle cx="200" cy="310" r="10" fill="url(#nodeGlow)"/>
+  <circle cx="200" cy="310" r="4" fill="#0f1629" stroke="#d4a843" stroke-width="0.8" opacity="0.6"/>
+  <circle cx="200" cy="310" r="1.5" fill="#d4a843" opacity="0.6"/>
+
+  <circle cx="420" cy="290" r="10" fill="url(#nodeGlow)"/>
+  <circle cx="420" cy="290" r="4" fill="#0f1629" stroke="#d4a843" stroke-width="0.8" opacity="0.6"/>
+  <circle cx="420" cy="290" r="1.5" fill="#d4a843" opacity="0.6"/>
+
+  <!-- === PROBABILITY LABELS on arb nodes === -->
+  <text x="95" y="117" fill="#a0aec0" font-family="monospace" font-size="8" text-anchor="middle" opacity="0.7">P=0.68</text>
+  <text x="280" y="67" fill="#a0aec0" font-family="monospace" font-size="8" text-anchor="middle" opacity="0.7">P=0.45</text>
+  <text x="460" y="157" fill="#a0aec0" font-family="monospace" font-size="8" text-anchor="middle" opacity="0.7">P=0.87</text>
+
+  <!-- === MINI ORDERBOOK VISUALIZATION (bottom-left) === -->
+  <g transform="translate(30, 330)" opacity="0.6">
+    <rect x="0" y="0" width="80" height="45" rx="4" fill="#0a0e1a" stroke="#1e2d55" stroke-width="0.8"/>
+    <text x="40" y="10" fill="#64748b" font-family="monospace" font-size="6" text-anchor="middle">ORDERBOOK</text>
+    <!-- Bid bars (green) -->
+    <rect x="5" y="14" width="28" height="3" rx="1" fill="#22c55e" opacity="0.6"/>
+    <rect x="5" y="19" width="22" height="3" rx="1" fill="#22c55e" opacity="0.45"/>
+    <rect x="5" y="24" width="16" height="3" rx="1" fill="#22c55e" opacity="0.3"/>
+    <rect x="5" y="29" width="10" height="3" rx="1" fill="#22c55e" opacity="0.2"/>
+    <!-- Ask bars (red) -->
+    <rect x="47" y="14" width="26" height="3" rx="1" fill="#ef4444" opacity="0.6"/>
+    <rect x="47" y="19" width="20" height="3" rx="1" fill="#ef4444" opacity="0.45"/>
+    <rect x="47" y="24" width="14" height="3" rx="1" fill="#ef4444" opacity="0.3"/>
+    <rect x="47" y="29" width="8" height="3" rx="1" fill="#ef4444" opacity="0.2"/>
+    <!-- Spread line -->
+    <line x1="40" y1="13" x2="40" y2="34" stroke="#d4a843" stroke-width="0.5" stroke-dasharray="1,1"/>
+    <text x="40" y="40" fill="#d4a843" font-family="monospace" font-size="5" text-anchor="middle">SPREAD</text>
+  </g>
+
+  <!-- === MATHEMATICAL NOTATION (bottom-right) === -->
+  <g transform="translate(410, 340)" opacity="0.5">
+    <text x="0" y="0" fill="#94a3b8" font-family="serif" font-size="11" font-style="italic">
+      <tspan>G = (V, E, w)</tspan>
+    </text>
+    <text x="0" y="16" fill="#64748b" font-family="serif" font-size="9" font-style="italic">
+      <tspan dx="0">w(C) = </tspan>
+      <tspan fill="#4ade80">0.42 + 0.31 + 0.27</tspan>
+      <tspan fill="#4ade80"> = 1.00</tspan>
+    </text>
+    <text x="0" y="30" fill="#64748b" font-family="serif" font-size="9" font-style="italic">
+      <tspan>arb(C) = 1 - w(C) &gt; 0</tspan>
+    </text>
+  </g>
+
+  <!-- === TITLE AREA === -->
+  <text x="300" y="370" fill="url(#gold)" font-family="'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" text-anchor="middle" letter-spacing="3" filter="url(#glow)">GRAPH THEORY ARBITRAGE</text>
+  <text x="300" y="386" fill="#64748b" font-family="'Helvetica Neue', Arial, sans-serif" font-size="8" text-anchor="middle" letter-spacing="2">PREDICTION MARKET TRADING SYSTEM</text>
+
+  <!-- === COMMUNITY LABELS (very subtle) === -->
+  <ellipse cx="100" cy="200" rx="75" ry="90" fill="none" stroke="#d4a843" stroke-width="0.5" opacity="0.12" stroke-dasharray="3,3"/>
+  <ellipse cx="310" cy="125" rx="85" ry="70" fill="none" stroke="#d4a843" stroke-width="0.5" opacity="0.12" stroke-dasharray="3,3"/>
+  <ellipse cx="500" cy="215" rx="75" ry="85" fill="none" stroke="#d4a843" stroke-width="0.5" opacity="0.12" stroke-dasharray="3,3"/>
+
+  <!-- Small sigma/sum notation hint top-right -->
+  <g transform="translate(530, 30)" opacity="0.3">
+    <text x="0" y="0" fill="#94a3b8" font-family="serif" font-size="14" font-style="italic">
+      <tspan dy="12" font-size="18">&#x03A3;</tspan>
+    </text>
+    <text x="15" y="15" fill="#64748b" font-family="serif" font-size="8" font-style="italic">P(e)</text>
+    <text x="6" y="25" fill="#64748b" font-family="serif" font-size="6">e &#x2208; C</text>
+  </g>
+</svg>
