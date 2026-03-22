@@ -19,15 +19,14 @@ function CurrentWork() {
             Salesforce &middot; MuleSoft &middot; Agent Fabric
           </p>
           <p className="text-fun-gray-light text-base leading-relaxed mb-4">
-            At MuleSoft, I&apos;m building the Public MCP Registry &mdash; a
-            governed catalog that brings 1,400+ third-party MCP servers into
-            Salesforce&apos;s Agent Fabric so enterprises can discover and adopt
-            agentic capabilities without sacrificing control.
+            At MuleSoft, I am leading the development of the Public MCP Registry: a governed catalog
+            of third-party MCP servers. This catalog streamlines discovery of third-party MCP servers,
+            centralizing them within a governed platform built on years of API management expertise.
           </p>
           <p className="text-fun-gray-light text-base leading-relaxed mb-6">
-            I designed the validation pipeline that went live in January 2026
-            and am now exploring security evaluation frameworks to strengthen
-            trust in third-party agent assets.
+            The reigstry went live in January 2026, marking an important step toward operationalizing 
+            trusted third-party agent discovery within Agent Fabric. Now, I am exploring behavioral and 
+            security evaluation frameworks to strengthen trust in third-party agent assets. 
           </p>
           <a
             href="https://blogs.mulesoft.com/news/public-mcp-servers-in-mulesoft-agent-registry/"
