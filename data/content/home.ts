@@ -66,6 +66,26 @@ export const testimonials: Testimonial[] = [];
 
 export const experiences: TExperience[] = [
   {
+    title: "Software Engineer -- Agentic Registry",
+    companyName: "Salesforce",
+    icon: "/static/logos/salesforce.png",
+    iconBg: "#ade0ed",
+    date: "2025 -- Present",
+    points: [
+      "Architected and launched the Public MCP Registry to solve fragmented discovery of thousands of MCP servers.",
+    ],
+  },
+  {
+    title: "Software Engineer -- Intelligent Document Processing",
+    companyName: "Salesforce",
+    icon: "/static/logos/salesforce.png",
+    iconBg: "#ade0ed",
+    date: "2024",
+    points: [
+      "Designed observability and monitoring tools for the Intelligent Document Processing service, integrating them into the MuleSoft admin console.",
+    ],
+  },
+  {
     title: "Founder",
     companyName: "GitMarks",
     icon: "/static/logos/git_marks.png",
@@ -75,34 +95,4 @@ export const experiences: TExperience[] = [
       "Led a 6-member team to drive the development of a full-stack grading platform for GitHub, helping expose students to industry-standard development workflows.",
     ],
   },
-  {
-    title: "Software Engineering Intern",
-    companyName: "Salesforce",
-    icon: "/static/logos/salesforce.png",
-    iconBg: "#ade0ed",
-    date: "May 2024 - August 2024",
-    points: [
-      "Designed and implemented management tools for the Intelligent Document Processing service, integrating them into the MuleSoft admin console.",
-    ],
-  },
-  {
-    title: "Software Tools Co-Op",
-    companyName: "Insulet Corporation",
-    icon: "/static/logos/insulet.png",
-    iconBg: "#C7B2D7",
-    date: "July 2023 - December 2023",
-    points: [
-      "Developed and supported internal software for our manufacturing team, helping streamline product quality testing.",
-    ],
-  },
-  {
-    title: "Software Engineering Intern",
-    companyName: "Ultimate Kronos Group (UKG)",
-    icon: "/static/logos/ukg.png",
-    iconBg: "#f7f7f7",
-    date: "May 2022 - December 2022",
-    points: [
-      "Enhanced and maintained the Performance Reviews feature of our UKG Pro product.",
-    ],
-  }
 ];
