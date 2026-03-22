@@ -1,0 +1,200 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc"/>
+      <stop offset="50%" style="stop-color:#f1f5f9"/>
+      <stop offset="100%" style="stop-color:#f8fafc"/>
+    </linearGradient>
+    <filter id="cardShadow">
+      <feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-color="#94a3b8" flood-opacity="0.15"/>
+    </filter>
+    <clipPath id="mainClip">
+      <rect x="12" y="12" width="576" height="346" rx="10"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#bg)"/>
+
+  <!-- Browser-like frame -->
+  <rect x="12" y="12" width="576" height="346" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Top nav bar -->
+  <rect x="12" y="12" width="576" height="36" rx="10" fill="#1e293b" clip-path="url(#mainClip)"/>
+  <rect x="12" y="38" width="576" height="10" fill="#1e293b"/>
+
+  <!-- Nav bar dots -->
+  <circle cx="30" cy="30" r="4" fill="#f87171" opacity="0.8"/>
+  <circle cx="44" cy="30" r="4" fill="#fbbf24" opacity="0.8"/>
+  <circle cx="58" cy="30" r="4" fill="#4ade80" opacity="0.8"/>
+
+  <!-- MuleSoft logo area -->
+  <rect x="78" y="24" width="14" height="14" rx="3" fill="#00c7ff" opacity="0.9"/>
+  <text x="98" y="35" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#f8fafc" font-weight="600" letter-spacing="0.3">Exchange</text>
+
+  <!-- Nav tabs -->
+  <text x="180" y="34" font-family="system-ui, sans-serif" font-size="7.5" fill="#94a3b8">Integrations</text>
+  <text x="240" y="34" font-family="system-ui, sans-serif" font-size="7.5" fill="#94a3b8">APIs</text>
+  <text x="275" y="34" font-family="system-ui, sans-serif" font-size="7.5" fill="#e2e8f0" font-weight="600">Agents &amp; Tools</text>
+  <text x="345" y="34" font-family="system-ui, sans-serif" font-size="7.5" fill="#94a3b8">Business</text>
+
+  <!-- Search bar area -->
+  <rect x="12" y="48" width="576" height="28" fill="#f8fafc"/>
+  <line x1="12" y1="76" x2="588" y2="76" stroke="#e2e8f0" stroke-width="0.5"/>
+
+  <!-- Search input -->
+  <rect x="145" y="54" width="200" height="18" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="0.7"/>
+  <text x="155" y="66" font-family="system-ui, sans-serif" font-size="7" fill="#94a3b8">Search assets...</text>
+
+  <!-- Filter pills -->
+  <rect x="355" y="55" width="40" height="16" rx="8" fill="#00c7ff" opacity="0.15"/>
+  <text x="364" y="66" font-family="system-ui, sans-serif" font-size="6.5" fill="#0284c7" font-weight="500">MCPs</text>
+
+  <rect x="401" y="55" width="52" height="16" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="0.5"/>
+  <text x="410" y="66" font-family="system-ui, sans-serif" font-size="6.5" fill="#64748b">Any tag</text>
+
+  <!-- Left sidebar -->
+  <rect x="12" y="76" width="120" height="282" fill="#f8fafc"/>
+  <line x1="132" y1="76" x2="132" y2="358" stroke="#e2e8f0" stroke-width="0.5"/>
+
+  <!-- Sidebar items -->
+  <text x="24" y="96" font-family="system-ui, sans-serif" font-size="7" fill="#64748b">All assets</text>
+  <text x="24" y="112" font-family="system-ui, sans-serif" font-size="7" fill="#64748b">Anypoint Platform</text>
+  <text x="24" y="128" font-family="system-ui, sans-serif" font-size="7" fill="#64748b">Connectors</text>
+  <text x="24" y="144" font-family="system-ui, sans-serif" font-size="7" fill="#64748b">Provided by MuleSoft</text>
+  <text x="24" y="160" font-family="system-ui, sans-serif" font-size="7" fill="#64748b">My applications</text>
+  <text x="24" y="176" font-family="system-ui, sans-serif" font-size="7" fill="#64748b">Agent Customers</text>
+
+  <!-- Public MCP - selected/highlighted -->
+  <rect x="16" y="184" width="112" height="18" rx="4" fill="#00c7ff" opacity="0.12"/>
+  <text x="24" y="196" font-family="system-ui, sans-serif" font-size="7.5" fill="#0284c7" font-weight="600">Public MCP</text>
+
+  <!-- Results header -->
+  <text x="145" y="92" font-family="system-ui, sans-serif" font-size="7" fill="#475569" font-weight="500">24 results</text>
+  <text x="530" y="92" font-family="system-ui, sans-serif" font-size="6.5" fill="#94a3b8">Sort by: Last Modified</text>
+
+  <!-- === MCP SERVER CARDS GRID (4 cols x 3 rows) === -->
+
+  <!-- Row 1 -->
+  <!-- Card 1: GitHub -->
+  <rect x="145" y="102" width="100" height="62" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.7" filter="url(#cardShadow)"/>
+  <circle cx="168" cy="122" r="10" fill="#24292e"/>
+  <text x="166" y="126" font-family="system-ui, sans-serif" font-size="8" fill="white" text-anchor="middle" font-weight="bold">G</text>
+  <text x="183" y="120" font-family="system-ui, sans-serif" font-size="6.5" fill="#1e293b" font-weight="500">GitHub</text>
+  <text x="183" y="129" font-family="system-ui, sans-serif" font-size="6.5" fill="#1e293b">MCP Server</text>
+  <rect x="155" y="142" width="6" height="6" rx="3" fill="#4ade80" opacity="0.7"/>
+  <text x="165" y="148" font-family="system-ui, sans-serif" font-size="5.5" fill="#94a3b8">Publicly Available</text>
+
+  <!-- Card 2: Atlassian -->
+  <rect x="253" y="102" width="100" height="62" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.7" filter="url(#cardShadow)"/>
+  <circle cx="276" cy="122" r="10" fill="#0052CC"/>
+  <text x="274" y="126" font-family="system-ui, sans-serif" font-size="8" fill="white" text-anchor="middle" font-weight="bold">A</text>
+  <text x="291" y="120" font-family="system-ui, sans-serif" font-size="6.5" fill="#1e293b" font-weight="500">Atlassian</text>
+  <text x="291" y="129" font-family="system-ui, sans-serif" font-size="6.5" fill="#1e293b">MCP Server</text>
+  <rect x="263" y="142" width="6" height="6" rx="3" fill="#4ade80" opacity="0.7"/>
+  <text x="273" y="148" font-family="system-ui, sans-serif" font-size="5.5" fill="#94a3b8">Publicly Available</text>
+
+  <!-- Card 3: Salesforce -->
+  <rect x="361" y="102" width="100" height="62" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.7" filter="url(#cardShadow)"/>
+  <circle cx="384" cy="122" r="10" fill="#00A1E0"/>
+  <text x="382" y="126" font-family="system-ui, sans-serif" font-size="8" fill="white" text-anchor="middle" font-weight="bold">S</text>
+  <text x="399" y="120" font-family="system-ui, sans-serif" font-size="6.5" fill="#1e293b" font-weight="500">Salesforce</text>
+  <text x="399" y="129" font-family="system-ui, sans-serif" font-size="6.5" fill="#1e293b">MCP Server</text>
+  <rect x="371" y="142" width="6" height="6" rx="3" fill="#4ade80" opacity="0.7"/>
+  <text x="381" y="148" font-family="system-ui, sans-serif" font-size="5.5" fill="#94a3b8">Publicly Available</text>
+
+  <!-- Card 4: Stripe -->
+  <rect x="469" y="102" width="100" height="62" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.7" filter="url(#cardShadow)"/>
+  <circle cx="492" cy="122" r="10" fill="#635BFF"/>
+  <text x="490" y="126" font-family="system-ui, sans-serif" font-size="8" fill="white" text-anchor="middle" font-weight="bold">S</text>
+  <text x="507" y="120" font-family="system-ui, sans-serif" font-size="6.5" fill="#1e293b" font-weight="500">Stripe</text>
+  <text x="507" y="129" font-family="system-ui, sans-serif" font-size="6.5" fill="#1e293b">MCP Server</text>
+  <rect x="479" y="142" width="6" height="6" rx="3" fill="#4ade80" opacity="0.7"/>
+  <text x="489" y="148" font-family="system-ui, sans-serif" font-size="5.5" fill="#94a3b8">Publicly Available</text>
+
+  <!-- Row 2 -->
+  <!-- Card 5: Slack -->
+  <rect x="145" y="174" width="100" height="62" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.7" filter="url(#cardShadow)"/>
+  <circle cx="168" cy="194" r="10" fill="#E01E5A"/>
+  <text x="166" y="198" font-family="system-ui, sans-serif" font-size="8" fill="white" text-anchor="middle" font-weight="bold">S</text>
+  <text x="183" y="192" font-family="system-ui, sans-serif" font-size="6.5" fill="#1e293b" font-weight="500">Slack</text>
+  <text x="183" y="201" font-family="system-ui, sans-serif" font-size="6.5" fill="#1e293b">MCP Server</text>
+  <rect x="155" y="214" width="6" height="6" rx="3" fill="#4ade80" opacity="0.7"/>
+  <text x="165" y="220" font-family="system-ui, sans-serif" font-size="5.5" fill="#94a3b8">Publicly Available</text>
+
+  <!-- Card 6: Notion -->
+  <rect x="253" y="174" width="100" height="62" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.7" filter="url(#cardShadow)"/>
+  <circle cx="276" cy="194" r="10" fill="#000000"/>
+  <text x="274" y="198" font-family="system-ui, sans-serif" font-size="8" fill="white" text-anchor="middle" font-weight="bold">N</text>
+  <text x="291" y="192" font-family="system-ui, sans-serif" font-size="6.5" fill="#1e293b" font-weight="500">Notion</text>
+  <text x="291" y="201" font-family="system-ui, sans-serif" font-size="6.5" fill="#1e293b">MCP Server</text>
+  <rect x="263" y="214" width="6" height="6" rx="3" fill="#4ade80" opacity="0.7"/>
+  <text x="273" y="220" font-family="system-ui, sans-serif" font-size="5.5" fill="#94a3b8">Publicly Available</text>
+
+  <!-- Card 7: Snowflake -->
+  <rect x="361" y="174" width="100" height="62" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.7" filter="url(#cardShadow)"/>
+  <circle cx="384" cy="194" r="10" fill="#29B5E8"/>
+  <text x="382" y="198" font-family="system-ui, sans-serif" font-size="8" fill="white" text-anchor="middle" font-weight="bold">S</text>
+  <text x="399" y="192" font-family="system-ui, sans-serif" font-size="6.5" fill="#1e293b" font-weight="500">Snowflake</text>
+  <text x="399" y="201" font-family="system-ui, sans-serif" font-size="6.5" fill="#1e293b">MCP Server</text>
+  <rect x="371" y="214" width="6" height="6" rx="3" fill="#4ade80" opacity="0.7"/>
+  <text x="381" y="220" font-family="system-ui, sans-serif" font-size="5.5" fill="#94a3b8">Publicly Available</text>
+
+  <!-- Card 8: MongoDB -->
+  <rect x="469" y="174" width="100" height="62" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.7" filter="url(#cardShadow)"/>
+  <circle cx="492" cy="194" r="10" fill="#47A248"/>
+  <text x="490" y="198" font-family="system-ui, sans-serif" font-size="8" fill="white" text-anchor="middle" font-weight="bold">M</text>
+  <text x="507" y="192" font-family="system-ui, sans-serif" font-size="6.5" fill="#1e293b" font-weight="500">MongoDB</text>
+  <text x="507" y="201" font-family="system-ui, sans-serif" font-size="6.5" fill="#1e293b">MCP Server</text>
+  <rect x="479" y="214" width="6" height="6" rx="3" fill="#4ade80" opacity="0.7"/>
+  <text x="489" y="220" font-family="system-ui, sans-serif" font-size="5.5" fill="#94a3b8">Publicly Available</text>
+
+  <!-- Row 3 -->
+  <!-- Card 9: Twilio -->
+  <rect x="145" y="246" width="100" height="62" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.7" filter="url(#cardShadow)"/>
+  <circle cx="168" cy="266" r="10" fill="#F22F46"/>
+  <text x="166" y="270" font-family="system-ui, sans-serif" font-size="8" fill="white" text-anchor="middle" font-weight="bold">T</text>
+  <text x="183" y="264" font-family="system-ui, sans-serif" font-size="6.5" fill="#1e293b" font-weight="500">Twilio</text>
+  <text x="183" y="273" font-family="system-ui, sans-serif" font-size="6.5" fill="#1e293b">MCP Server</text>
+  <rect x="155" y="286" width="6" height="6" rx="3" fill="#4ade80" opacity="0.7"/>
+  <text x="165" y="292" font-family="system-ui, sans-serif" font-size="5.5" fill="#94a3b8">Publicly Available</text>
+
+  <!-- Card 10: Datadog -->
+  <rect x="253" y="246" width="100" height="62" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.7" filter="url(#cardShadow)"/>
+  <circle cx="276" cy="266" r="10" fill="#632CA6"/>
+  <text x="274" y="270" font-family="system-ui, sans-serif" font-size="8" fill="white" text-anchor="middle" font-weight="bold">D</text>
+  <text x="291" y="264" font-family="system-ui, sans-serif" font-size="6.5" fill="#1e293b" font-weight="500">Datadog</text>
+  <text x="291" y="273" font-family="system-ui, sans-serif" font-size="6.5" fill="#1e293b">MCP Server</text>
+  <rect x="263" y="286" width="6" height="6" rx="3" fill="#4ade80" opacity="0.7"/>
+  <text x="273" y="292" font-family="system-ui, sans-serif" font-size="5.5" fill="#94a3b8">Publicly Available</text>
+
+  <!-- Card 11: Figma -->
+  <rect x="361" y="246" width="100" height="62" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.7" filter="url(#cardShadow)"/>
+  <circle cx="384" cy="266" r="10" fill="#A259FF"/>
+  <text x="382" y="270" font-family="system-ui, sans-serif" font-size="8" fill="white" text-anchor="middle" font-weight="bold">F</text>
+  <text x="399" y="264" font-family="system-ui, sans-serif" font-size="6.5" fill="#1e293b" font-weight="500">Figma</text>
+  <text x="399" y="273" font-family="system-ui, sans-serif" font-size="6.5" fill="#1e293b">MCP Server</text>
+  <rect x="371" y="286" width="6" height="6" rx="3" fill="#4ade80" opacity="0.7"/>
+  <text x="381" y="292" font-family="system-ui, sans-serif" font-size="5.5" fill="#94a3b8">Publicly Available</text>
+
+  <!-- Card 12: Brave -->
+  <rect x="469" y="246" width="100" height="62" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.7" filter="url(#cardShadow)"/>
+  <circle cx="492" cy="266" r="10" fill="#FB542B"/>
+  <text x="490" y="270" font-family="system-ui, sans-serif" font-size="8" fill="white" text-anchor="middle" font-weight="bold">B</text>
+  <text x="507" y="264" font-family="system-ui, sans-serif" font-size="6.5" fill="#1e293b" font-weight="500">Brave</text>
+  <text x="507" y="273" font-family="system-ui, sans-serif" font-size="6.5" fill="#1e293b">MCP Server</text>
+  <rect x="479" y="286" width="6" height="6" rx="3" fill="#4ade80" opacity="0.7"/>
+  <text x="489" y="292" font-family="system-ui, sans-serif" font-size="5.5" fill="#94a3b8">Publicly Available</text>
+
+  <!-- Fade-out at bottom to suggest more content -->
+  <rect x="132" y="318" width="456" height="40" fill="url(#bg)" opacity="0.7"/>
+
+  <!-- Scroll hint dots -->
+  <circle cx="350" cy="340" r="2" fill="#94a3b8" opacity="0.5"/>
+  <circle cx="360" cy="340" r="2" fill="#cbd5e1" opacity="0.4"/>
+  <circle cx="370" cy="340" r="2" fill="#cbd5e1" opacity="0.3"/>
+
+  <!-- Title area -->
+  <text x="300" y="378" fill="#0f172a" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" text-anchor="middle" letter-spacing="2.5">PUBLIC MCP REGISTRY</text>
+  <text x="300" y="393" fill="#475569" font-family="system-ui, -apple-system, sans-serif" font-size="8" text-anchor="middle" letter-spacing="1.5">MuleSoft Agent Registry</text>
+</svg>

@@ -75,7 +75,7 @@ function Hero() {
         </h1>
         <ScrollLink
           activeClass="active"
-          to="experience-header"
+          to="current-work"
           spy={true}
           offset={-30}
           smooth={true}

@@ -1,4 +1,5 @@
 import CTA from "@/components/home/CTA";
+import CurrentWork from "@/components/home/CurrentWork";
 import Hero from "@/components/home/Hero";
 import Page from "@/components/utility/Page";
 import Projects from "@/components/home/Projects";
@@ -9,7 +10,8 @@ export default function Home() {
   return (
     <Page currentPage="Home" meta={{ desc: "I'm a full-stack developer passionate about designing and coding seamless, user-friendly applications." }}>
       <Hero />
-      <div className="mt-20 space-y-24">
+      <div className="mt-32 space-y-24">
+        <CurrentWork />
         {/* <Timeline /> */}
         <Projects />
         <Skills />
