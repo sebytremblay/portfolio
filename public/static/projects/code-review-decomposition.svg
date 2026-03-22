@@ -50,118 +50,79 @@
     <line x1="550" y1="0" x2="550" y2="400"/>
   </g>
 
-  <!-- Decorative code brackets (left side) -->
-  <g opacity="0.2" fill="none" stroke="#94a3b8" stroke-width="2">
-    <path d="M 30 80 L 15 80 L 15 170 L 30 170"/>
-    <path d="M 30 230 L 15 230 L 15 320 L 30 320"/>
-  </g>
-
-  <!-- Decorative code brackets (right side) -->
-  <g opacity="0.2" fill="none" stroke="#94a3b8" stroke-width="2">
-    <path d="M 570 80 L 585 80 L 585 170 L 570 170"/>
-    <path d="M 570 230 L 585 230 L 585 320 L 570 320"/>
-  </g>
-
   <!-- Connection edges (drawn first, behind nodes) -->
-  <!-- Parse Diff -> Fetch Files -->
-  <line x1="138" y1="120" x2="218" y2="120" stroke="#4338ca" stroke-width="2" opacity="0.7"/>
-  <polygon points="215,116 223,120 215,124" fill="#4338ca" opacity="0.7"/>
 
-  <!-- Fetch Files -> Generate Atoms -->
-  <line x1="302" y1="120" x2="370" y2="120" stroke="#4338ca" stroke-width="2" opacity="0.7"/>
-  <polygon points="367,116 375,120 367,124" fill="#4338ca" opacity="0.7"/>
+  <!-- Row 1: Parse Diff -> Fetch Files -->
+  <line x1="168" y1="80" x2="228" y2="80" stroke="#4338ca" stroke-width="2" opacity="0.7"/>
+  <polygon points="225,76 233,80 225,84" fill="#4338ca" opacity="0.7"/>
 
-  <!-- Generate Atoms -> Annotate Atoms -->
-  <path d="M 440 138 Q 440 175 380 175 Q 320 175 300 198" fill="none" stroke="#6d28d9" stroke-width="2" opacity="0.7"/>
-  <polygon points="296,195 300,203 304,195" fill="#6d28d9" opacity="0.7"/>
+  <!-- Row 1: Fetch Files -> Gen Atoms -->
+  <line x1="340" y1="80" x2="408" y2="80" stroke="#4338ca" stroke-width="2" opacity="0.7"/>
+  <polygon points="405,76 413,80 405,84" fill="#4338ca" opacity="0.7"/>
 
-  <!-- Annotate Atoms -> Pre-Link -->
-  <line x1="262" y1="225" x2="182" y2="225" stroke="#6d28d9" stroke-width="2" opacity="0.7"/>
-  <polygon points="185,221 177,225 185,229" fill="#6d28d9" opacity="0.7"/>
-
-  <!-- Pre-Link -> Cluster -->
-  <path d="M 112 243 Q 112 270 175 270 Q 240 270 260 293" fill="none" stroke="#0e7490" stroke-width="2" opacity="0.7"/>
-  <polygon points="256,290 260,298 264,290" fill="#0e7490" opacity="0.7"/>
-
-  <!-- Cluster -> Validate -->
-  <line x1="338" y1="315" x2="402" y2="315" stroke="#0e7490" stroke-width="2" opacity="0.7"/>
-  <polygon points="399,311 407,315 399,319" fill="#0e7490" opacity="0.7"/>
-
-  <!-- Validate -> Cluster (retry loop) -->
-  <path d="M 440 298 Q 440 268 380 268 Q 340 268 300 290" fill="none" stroke="#d97706" stroke-width="1.5" opacity="0.5" stroke-dasharray="5,3"/>
-  <polygon points="303,287 297,293 305,294" fill="#d97706" opacity="0.5"/>
-  <text x="390" y="264" font-family="monospace" font-size="8" fill="#b45309" opacity="0.7">retry</text>
-
-  <!-- Validate -> Build Tasks -->
-  <line x1="478" y1="315" x2="520" y2="315" stroke="#047857" stroke-width="2" opacity="0.7"/>
-  <polygon points="517,311 525,315 517,319" fill="#047857" opacity="0.7"/>
-
-  <!-- Row 1: Parse -> Fetch -> Generate -->
-  <!-- Node: Parse Diff -->
-  <rect x="60" y="100" width="78" height="40" rx="8" fill="url(#nodeGrad)" filter="url(#shadow)"/>
-  <text x="99" y="124" font-family="monospace" font-size="10" fill="white" text-anchor="middle" font-weight="bold">Parse Diff</text>
-
-  <!-- Node: Fetch Files -->
-  <rect x="222" y="100" width="80" height="40" rx="8" fill="url(#nodeGrad)" filter="url(#shadow)"/>
-  <text x="262" y="124" font-family="monospace" font-size="10" fill="white" text-anchor="middle" font-weight="bold">Fetch Files</text>
-
-  <!-- Node: Generate Atoms -->
-  <rect x="374" y="100" width="92" height="40" rx="8" fill="url(#nodeGrad)" filter="url(#shadow)"/>
-  <text x="420" y="124" font-family="monospace" font-size="10" fill="white" text-anchor="middle" font-weight="bold">Gen Atoms</text>
+  <!-- Row 1 to Row 2: Gen Atoms -> Annotate -->
+  <path d="M 500 98 Q 500 145 430 145 Q 370 145 370 168" fill="none" stroke="#6d28d9" stroke-width="2" opacity="0.7"/>
+  <polygon points="366,165 370,173 374,165" fill="#6d28d9" opacity="0.7"/>
 
   <!-- Row 2: Annotate -> Pre-Link -->
-  <!-- Node: Annotate Atoms -->
-  <rect x="262" y="205" width="76" height="40" rx="8" fill="url(#nodeGrad2)" filter="url(#shadow)"/>
-  <text x="300" y="229" font-family="monospace" font-size="10" fill="white" text-anchor="middle" font-weight="bold">Annotate</text>
+  <line x1="320" y1="195" x2="210" y2="195" stroke="#6d28d9" stroke-width="2" opacity="0.7"/>
+  <polygon points="213,191 205,195 213,199" fill="#6d28d9" opacity="0.7"/>
+
+  <!-- Row 2 to Row 3: Pre-Link -> Cluster -->
+  <path d="M 120 218 Q 120 260 180 260 Q 220 260 220 283" fill="none" stroke="#0e7490" stroke-width="2" opacity="0.7"/>
+  <polygon points="216,280 220,288 224,280" fill="#0e7490" opacity="0.7"/>
+
+  <!-- Row 3: Cluster -> Validate -->
+  <line x1="278" y1="310" x2="348" y2="310" stroke="#0e7490" stroke-width="2" opacity="0.7"/>
+  <polygon points="345,306 353,310 345,314" fill="#0e7490" opacity="0.7"/>
+
+  <!-- Row 3: Validate -> Cluster (retry loop) -->
+  <path d="M 400 288 Q 400 260 340 260 Q 300 260 270 283" fill="none" stroke="#d97706" stroke-width="1.5" opacity="0.5" stroke-dasharray="5,3"/>
+  <polygon points="273,280 267,286 275,287" fill="#d97706" opacity="0.5"/>
+  <text x="350" y="256" font-family="monospace" font-size="9" fill="#b45309" opacity="0.7">retry</text>
+
+  <!-- Row 3: Validate -> Build -->
+  <line x1="440" y1="310" x2="488" y2="310" stroke="#047857" stroke-width="2" opacity="0.7"/>
+  <polygon points="485,306 493,310 485,314" fill="#047857" opacity="0.7"/>
+
+  <!-- Row 1 nodes (indigo) -->
+  <!-- Node: Parse Diff -->
+  <rect x="75" y="57" width="93" height="46" rx="9" fill="url(#nodeGrad)" filter="url(#shadow)"/>
+  <text x="121" y="84" font-family="monospace" font-size="11" fill="white" text-anchor="middle" font-weight="bold">Parse Diff</text>
+
+  <!-- Node: Fetch Files -->
+  <rect x="233" y="57" width="107" height="46" rx="9" fill="url(#nodeGrad)" filter="url(#shadow)"/>
+  <text x="286" y="84" font-family="monospace" font-size="11" fill="white" text-anchor="middle" font-weight="bold">Fetch Files</text>
+
+  <!-- Node: Gen Atoms -->
+  <rect x="413" y="57" width="105" height="46" rx="9" fill="url(#nodeGrad)" filter="url(#shadow)"/>
+  <text x="465" y="84" font-family="monospace" font-size="11" fill="white" text-anchor="middle" font-weight="bold">Gen Atoms</text>
+
+  <!-- Row 2 nodes (purple) -->
+  <!-- Node: Annotate -->
+  <rect x="320" y="172" width="100" height="46" rx="9" fill="url(#nodeGrad2)" filter="url(#shadow)"/>
+  <text x="370" y="199" font-family="monospace" font-size="11" fill="white" text-anchor="middle" font-weight="bold">Annotate</text>
 
   <!-- Node: Pre-Link -->
-  <rect x="112" y="205" width="68" height="40" rx="8" fill="url(#nodeGrad2)" filter="url(#shadow)"/>
-  <text x="146" y="229" font-family="monospace" font-size="10" fill="white" text-anchor="middle" font-weight="bold">Pre-Link</text>
+  <rect x="110" y="172" width="95" height="46" rx="9" fill="url(#nodeGrad2)" filter="url(#shadow)"/>
+  <text x="157" y="199" font-family="monospace" font-size="11" fill="white" text-anchor="middle" font-weight="bold">Pre-Link</text>
 
-  <!-- Row 3: Cluster -> Validate -> Build -->
+  <!-- Row 3 nodes (cyan + green terminal) -->
   <!-- Node: Cluster -->
-  <rect x="260" y="295" width="78" height="40" rx="8" fill="url(#nodeGrad3)" filter="url(#shadow)"/>
-  <text x="299" y="319" font-family="monospace" font-size="10" fill="white" text-anchor="middle" font-weight="bold">Cluster</text>
+  <rect x="178" y="287" width="100" height="46" rx="9" fill="url(#nodeGrad3)" filter="url(#shadow)"/>
+  <text x="228" y="314" font-family="monospace" font-size="11" fill="white" text-anchor="middle" font-weight="bold">Cluster</text>
 
   <!-- Node: Validate -->
-  <rect x="410" y="295" width="70" height="40" rx="8" fill="url(#nodeGrad3)" filter="url(#shadow)"/>
-  <text x="445" y="319" font-family="monospace" font-size="10" fill="white" text-anchor="middle" font-weight="bold">Validate</text>
+  <rect x="353" y="287" width="90" height="46" rx="9" fill="url(#nodeGrad3)" filter="url(#shadow)"/>
+  <text x="398" y="314" font-family="monospace" font-size="11" fill="white" text-anchor="middle" font-weight="bold">Validate</text>
 
-  <!-- Node: Build Tasks (terminal) -->
-  <rect x="525" y="295" width="55" height="40" rx="8" fill="url(#nodeGradEnd)" filter="url(#shadow)"/>
-  <text x="552" y="319" font-family="monospace" font-size="10" fill="white" text-anchor="middle" font-weight="bold">Build</text>
+  <!-- Node: Build (terminal) -->
+  <rect x="493" y="287" width="75" height="46" rx="9" fill="url(#nodeGradEnd)" filter="url(#shadow)"/>
+  <text x="530" y="314" font-family="monospace" font-size="11" fill="white" text-anchor="middle" font-weight="bold">Build</text>
 
   <!-- START indicator -->
-  <circle cx="40" cy="120" r="8" fill="#4338ca" opacity="0.8" filter="url(#shadow)"/>
-  <text x="40" y="123" font-family="monospace" font-size="6" fill="white" text-anchor="middle">S</text>
-  <line x1="48" y1="120" x2="58" y2="120" stroke="#4338ca" stroke-width="2" opacity="0.7"/>
-  <polygon points="55,116 63,120 55,124" fill="#4338ca" opacity="0.7"/>
-
-  <!-- Decorative diff symbols -->
-  <g opacity="0.35" font-family="monospace" font-size="11">
-    <text x="50" y="60" fill="#15803d">+ added line</text>
-    <text x="50" y="75" fill="#dc2626">- removed line</text>
-  </g>
-
-  <g opacity="0.35" font-family="monospace" font-size="11">
-    <text x="400" y="60" fill="#0e7490">@@ -12,6 +12,8 @@</text>
-    <text x="400" y="75" fill="#7c3aed">diff --git a/b</text>
-  </g>
-
-  <!-- Title -->
-  <text x="300" y="375" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#0f172a" text-anchor="middle" font-weight="600" letter-spacing="0.5">Code Review Decomposition</text>
-  <text x="300" y="393" font-family="monospace" font-size="10" fill="#64748b" text-anchor="middle">LangGraph Pipeline</text>
-
-  <!-- Small atom-like decorative elements scattered -->
-  <circle cx="520" cy="165" r="3" fill="#7c3aed" opacity="0.4"/>
-  <circle cx="540" cy="180" r="2" fill="#4338ca" opacity="0.35"/>
-  <circle cx="510" cy="185" r="2.5" fill="#0e7490" opacity="0.3"/>
-  <circle cx="555" cy="150" r="2" fill="#8b5cf6" opacity="0.3"/>
-  <circle cx="70" cy="290" r="3" fill="#7c3aed" opacity="0.35"/>
-  <circle cx="85" cy="310" r="2" fill="#4338ca" opacity="0.3"/>
-  <circle cx="55" cy="305" r="2.5" fill="#0e7490" opacity="0.3"/>
-
-  <!-- Subtle connecting dots between rows -->
-  <circle cx="200" cy="175" r="1.5" fill="#4338ca" opacity="0.4"/>
-  <circle cx="360" cy="270" r="1.5" fill="#7c3aed" opacity="0.4"/>
+  <circle cx="45" cy="80" r="10" fill="#4338ca" opacity="0.8" filter="url(#shadow)"/>
+  <text x="45" y="84" font-family="monospace" font-size="7" fill="white" text-anchor="middle">S</text>
+  <line x1="55" y1="80" x2="73" y2="80" stroke="#4338ca" stroke-width="2" opacity="0.7"/>
+  <polygon points="70,76 78,80 70,84" fill="#4338ca" opacity="0.7"/>
 </svg>
