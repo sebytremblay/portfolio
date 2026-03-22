@@ -20,15 +20,13 @@
       "@/data/*": ["data/*"],
       "@/lib/*": ["lib/*"],
       "@/styles/*": ["styles/*"],
-      "@/utils/*": ["utils/*"],
-      "contentlayer/generated": ["./.contentlayer/generated"]
+      "@/utils/*": ["utils/*"]
     }
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx",
-    ".contentlayer/generated"
+    "**/*.tsx"
   ],
   "exclude": ["node_modules"]
 }
