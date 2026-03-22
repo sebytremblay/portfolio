@@ -20,11 +20,11 @@ function CurrentWork() {
           </p>
           <p className="text-fun-gray-light text-base leading-relaxed mb-4">
             At MuleSoft, I am leading the development of the Public MCP Registry: a governed catalog
-            of third-party MCP servers. This catalog streamlines discovery of third-party MCP servers,
-            centralizing them within a governed platform built on years of API management expertise.
+            of third-party MCP servers. This catalog streamlines discovery of agentic capabilities,
+            centralizing AI resources within a governed platform built on years of API management expertise.
           </p>
           <p className="text-fun-gray-light text-base leading-relaxed mb-6">
-            The reigstry went live in January 2026, marking an important step toward operationalizing 
+            The registry went live in January 2026, marking an important step toward operationalizing 
             trusted third-party agent discovery within Agent Fabric. Now, I am exploring behavioral and 
             security evaluation frameworks to strengthen trust in third-party agent assets. 
           </p>
