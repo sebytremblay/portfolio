@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
+import Link from "next/link";
 import KeepScrollingIcon from "@/components/utility/KeepScrollingIcon";
 
 function Hero() {
@@ -73,22 +74,29 @@ function Hero() {
             src="/static/doodles/hero/code.svg"
           />
         </h1>
-        <ScrollLink
-          activeClass="active"
-          to="current-work"
-          spy={true}
-          offset={-30}
-          smooth={true}
-          duration={500}
-          onSetActive={handleSetActive}
-        >
-          <div
-            className="cursor-pointer font-bold whitespace-nowrap px-10 py-4 text-fun-white border-2 text-xl rounded-full border-fun-white bg-bg hover:bg-fun-pink hover:text-white hover:border-fun-pink transition-colors"
-            onClick={handleClick}
+        <div className="flex flex-col sm:flex-row items-center gap-5">
+          <ScrollLink
+            activeClass="active"
+            to="current-work"
+            spy={true}
+            offset={-30}
+            smooth={true}
+            duration={500}
+            onSetActive={handleSetActive}
           >
-            Tell me more
-          </div>
-        </ScrollLink>
+            <div
+              className="cursor-pointer font-bold whitespace-nowrap px-10 py-4 text-fun-white border-2 text-xl rounded-full border-fun-white bg-bg hover:bg-fun-pink hover:text-white hover:border-fun-pink transition-colors"
+              onClick={handleClick}
+            >
+              Tell me more
+            </div>
+          </ScrollLink>
+          <Link href="/projects">
+            <div className="cursor-pointer font-bold whitespace-nowrap px-10 py-4 text-xl text-fun-pink hover:text-white transition-colors">
+              See my work &rarr;
+            </div>
+          </Link>
+        </div>
       </div>
 
       {showIcon && <KeepScrollingIcon />}
