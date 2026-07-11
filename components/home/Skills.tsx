@@ -1,8 +1,18 @@
 import React from "react";
 import Link from "next/link";
 import { skills } from "@/data/content/home";
-import { allKebabTags } from "@/data/content/projects";
+import { allTags } from "@/data/content/projects";
 import { kebabCase } from "@/utils/utils";
+
+// Normalize a label to a case- and separator-insensitive key so a skill title
+// such as "Typescript" resolves to the real "TypeScript" project tag slug.
+const normalize = (label: string) => label.toLowerCase().replace(/[^a-z0-9]/g, "");
+
+// Map each normalized skill label to the project tag's actual kebab slug.
+const tagSlugByLabel: Record<string, string> = allTags.reduce((acc, tag) => {
+  acc[normalize(tag)] = kebabCase(tag);
+  return acc;
+}, {} as Record<string, string>);
 
 function Skills() {
   return (
@@ -30,8 +40,7 @@ function Skills() {
       </h2>
       <div className="relative max-w-lg w-full mx-auto md:mx-none grid gap-x-8 gap-y-12 sm:gap-8 md:gap-12 grid-cols-3 sm:grid-cols-6 items-center place-content-center">
         {skills.map((item, index) => {
-          const tag = kebabCase(item.title);
-          const hasProjects = allKebabTags.includes(tag);
+          const tagSlug = tagSlugByLabel[normalize(item.title)];
           const content = (
             <>
               <img src={item.icon} style={item.style} />
@@ -40,8 +49,8 @@ function Skills() {
               </p>
             </>
           );
-          return hasProjects ? (
-            <Link href={`/projects/tag/${tag}`} key={index}>
+          return tagSlug ? (
+            <Link href={`/projects/tag/${tagSlug}`} key={index}>
               <div
                 title={`See my ${item.title} projects`}
                 className="group w-10 mx-auto flex items-center flex-col justify-center cursor-pointer transition hover:-translate-y-1 will-change-transform"
