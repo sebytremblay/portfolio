@@ -1,10 +1,37 @@
 import Link from "next/link";
 import React from "react";
-import { footer } from "@/data/global";
+import { footer, socials } from "@/data/global";
 
 function Footer() {
   return (
     <footer className="flex flex-col w-screen px-5 py-10 border-t border-fun-pink-darker z-5 bg-bg">
+      <div className="max-w-4xl w-full m-auto flex items-center justify-center gap-6">
+        <a
+          href={socials.linkedIn.link}
+          target="_blank"
+          rel="noreferrer"
+          title="LinkedIn"
+          className="opacity-60 hover:opacity-100 transition-opacity"
+        >
+          <img src="/static/icons/linkedin-f.svg" width="24" height="24" alt="LinkedIn" />
+        </a>
+        <a
+          href={socials.github.link}
+          target="_blank"
+          rel="noreferrer"
+          title="GitHub"
+          className="opacity-60 hover:opacity-100 transition-opacity"
+        >
+          <img src="/static/icons/github-f.svg" width="24" height="24" alt="GitHub" />
+        </a>
+        <a
+          href="mailto:tremblay.se@northeastern.edu"
+          title="Email"
+          className="opacity-60 hover:opacity-100 transition-opacity"
+        >
+          <img src="/static/icons/mail-f.svg" width="24" height="24" alt="Email" />
+        </a>
+      </div>
       {/* <div className="w-full max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-2 justify-center items-start gap-x-5" id="navigation">
         {footer.columns.map((item, index) => {
           return (
