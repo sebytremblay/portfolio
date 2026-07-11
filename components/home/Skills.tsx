@@ -1,5 +1,8 @@
 import React from "react";
+import Link from "next/link";
 import { skills } from "@/data/content/home";
+import { allKebabTags } from "@/data/content/projects";
+import { kebabCase } from "@/utils/utils";
 
 function Skills() {
   return (
@@ -27,16 +30,32 @@ function Skills() {
       </h2>
       <div className="relative max-w-lg w-full mx-auto md:mx-none grid gap-x-8 gap-y-12 sm:gap-8 md:gap-12 grid-cols-3 sm:grid-cols-6 items-center place-content-center">
         {skills.map((item, index) => {
-          return (
+          const tag = kebabCase(item.title);
+          const hasProjects = allKebabTags.includes(tag);
+          const content = (
+            <>
+              <img src={item.icon} style={item.style} />
+              <p className="text-xs text-fun-gray font-bold mt-3 opacity-80 group-hover:text-fun-pink group-hover:opacity-100 transition-colors">
+                {item.title}
+              </p>
+            </>
+          );
+          return hasProjects ? (
+            <Link href={`/projects/tag/${tag}`} key={index}>
+              <div
+                title={`See my ${item.title} projects`}
+                className="group w-10 mx-auto flex items-center flex-col justify-center cursor-pointer transition hover:-translate-y-1 will-change-transform"
+              >
+                {content}
+              </div>
+            </Link>
+          ) : (
             <div
               title={item.title}
               key={index}
               className="w-10 mx-auto flex items-center flex-col justify-center"
             >
-              <img src={item.icon} style={item.style} />
-              <p className="text-xs text-fun-gray font-bold mt-3 opacity-80">
-                {item.title}
-              </p>
+              {content}
             </div>
           );
         })}
