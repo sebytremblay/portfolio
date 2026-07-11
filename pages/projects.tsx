@@ -2,6 +2,7 @@ import Heading from "components/projects/Heading";
 import More from "components/projects/More";
 import Page from "components/utility/Page";
 import Projects from "components/projects/Projects";
+import PageCTA from "@/components/global/PageCTA";
 import React from "react";
 
 function projects() {
@@ -13,6 +14,10 @@ function projects() {
       <Heading />
       <Projects />
       <More />
+      <PageCTA
+        title="Want to see this kind of work on your team?"
+        subtitle="I am always open to a conversation. Reach out or connect and let us talk."
+      />
     </Page>
   );
 }

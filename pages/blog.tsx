@@ -3,6 +3,7 @@ import Page from "@/components/utility/Page";
 import BlogCard from "@/components/blog/BlogCard";
 import posts from "@/data/content/blog";
 import SectionTitle from "@/components/global/SectionTitle";
+import PageCTA from "@/components/global/PageCTA";
 
 function BlogPage() {
     return (
@@ -25,6 +26,10 @@ function BlogPage() {
                         ))}
                 </div>
             </div>
+            <PageCTA
+                title="Curious to go deeper?"
+                subtitle="I write about the systems I build. Reach out or connect if you want to talk shop."
+            />
         </Page>
     );
 }
