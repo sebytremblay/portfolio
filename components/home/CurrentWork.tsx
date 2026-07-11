@@ -6,35 +6,42 @@ function CurrentWork() {
     <div id="current-work" className="flex flex-col text-left justify-between relative">
       <SectionTitle title="What I'm currently working on." />
       <div className="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12">
-        <div className="w-full max-w-xs md:max-w-sm flex-shrink-0">
+        <a
+          href="https://blogs.mulesoft.com/news/mcp-cost-management/"
+          target="_blank"
+          rel="noreferrer"
+          className="w-full max-w-xs md:max-w-sm flex-shrink-0"
+        >
           <img
-            className="w-full rounded-xl border border-fun-pink-dark"
-            src="/static/projects/public-mcp-registry.png"
-            alt="Public MCP Registry"
+            className="w-full rounded-xl border border-fun-pink-dark cursor-pointer transition hover:-translate-y-2 hover:border-fun-pink will-change-transform"
+            src="/static/projects/cost-management-platform.png"
+            alt="AI Cost Management Platform"
           />
-        </div>
+        </a>
         <div className="flex flex-col justify-center text-center md:text-left">
-          <h3 className="text-2xl font-bold mb-1">Public MCP Registry</h3>
+          <h3 className="text-2xl font-bold mb-1">AI Cost Management Platform</h3>
           <p className="text-fun-pink font-monospace text-sm mb-4">
             Salesforce &middot; MuleSoft &middot; Agent Fabric
           </p>
           <p className="text-fun-gray-light text-base leading-relaxed mb-4">
-            At MuleSoft, I am leading the development of the Public MCP Registry: a governed catalog
-            of third-party MCP servers. This catalog streamlines discovery of agentic capabilities,
-            centralizing AI resources within a governed platform built on years of API management expertise.
+            At MuleSoft, I am building the cost management platform for Agent Fabric: a FinOps layer
+            that gives customers real-time visibility into the token consumption behind every AI agent
+            interaction. The platform surfaces optimization opportunities and enforces cost-reduction
+            policies at the gateway, trimming token volume without altering agent behavior.
           </p>
           <p className="text-fun-gray-light text-base leading-relaxed mb-6">
-            The registry went live in January 2026, marking an important step toward operationalizing 
-            trusted third-party agent discovery within Agent Fabric. Now, I am exploring behavioral and 
-            security evaluation frameworks to strengthen trust in third-party agent assets. 
+            The platform shipped in May 2026 as part of the MuleSoft Omni GA release, delivering 10 to
+            50 percent token savings depending on the workload. Now, I am designing the evaluation
+            framework that measures policy effectiveness, strengthening the accuracy and trust behind
+            every optimization we recommend.
           </p>
           <a
-            href="https://blogs.mulesoft.com/news/public-mcp-servers-in-mulesoft-agent-registry/"
+            href="https://blogs.mulesoft.com/news/mcp-cost-management/"
             target="_blank"
             rel="noreferrer"
             className="text-fun-pink hover:underline transition-colors w-fit mx-auto md:mx-0"
           >
-            Read the announcement &rarr;
+            Read Our Launch Blog &rarr;
           </a>
         </div>
       </div>
