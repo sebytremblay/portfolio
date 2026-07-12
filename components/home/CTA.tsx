@@ -1,5 +1,4 @@
 import React from "react";
-import resumePath from "@/data/content/resume";
 import { socials } from "@/data/global";
 
 function CTA() {
@@ -11,8 +10,8 @@ function CTA() {
           Interested in Working Together?
         </h2>
         <p className="text-fun-gray-light text-lg max-w-xl mx-auto mb-10">
-          I am open to new opportunities. Send me a note, connect on LinkedIn, or
-          skim my resume to see the full story.
+          I am open to new opportunities. Send me a note or connect on LinkedIn,
+          and I will get back to you.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
@@ -28,14 +27,6 @@ function CTA() {
             className="cursor-pointer font-bold whitespace-nowrap px-8 py-3 text-white border-2 rounded-full border-white bg-bg hover:bg-fun-pink hover:border-fun-pink transition-colors"
           >
             Connect on LinkedIn
-          </a>
-          <a
-            href={resumePath}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="cursor-pointer font-bold whitespace-nowrap px-8 py-3 text-fun-pink hover:text-white transition-colors"
-          >
-            View Resume &rarr;
           </a>
         </div>
       </div>
