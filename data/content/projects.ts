@@ -10,11 +10,25 @@ const projects: Project[] = [
     tags: ["Python", "Graph Theory", "Prediction Markets", "NetworkX", "WebSockets", "SAT Solving", "React"],
   },
   {
+    title: "GitHub OS",
+    desc: "Claude Code plugin that turns GitHub into an agent control plane, slicing features into stacked draft PRs and auto-addressing review comments.",
+    img: "/static/projects/github-os.svg",
+    github: "https://github.com/sebytremblay/github-os",
+    tags: ["Claude Code", "Plugins", "Git", "GitHub", "Shell", "CLI"],
+  },
+  {
     title: "Code Review Decomposition Service",
     desc: "AI-powered LangGraph pipeline that decomposes PRs into reviewable tasks.",
     img: "/static/projects/code-review-decomposition.png",
     github: "https://github.com/SurfaceLayerAI/surface",
     tags: ["TypeScript", "LangGraph", "Next.js", "Anthropic Claude", "Tree-sitter", "Prisma"],
+  },
+  {
+    title: "Session Search",
+    desc: "Semantic search over Claude Code session history to surface past decisions, debugging traces, and reusable insights.",
+    img: "/static/projects/session-search.svg",
+    github: "https://github.com/sebytremblay/session-search",
+    tags: ["Claude Code", "Semantic Search", "CLI", "NLP"],
   },
   {
     title: "Surface Plugin",
@@ -78,6 +92,20 @@ const projects: Project[] = [
     img: "/static/projects/2048-game.png",
     github: "https://github.com/sebytremblay/2048Game",
     tags: ["React", "Typescript", "MongoDB", "REST API"],
+  },
+  {
+    title: "Raft Consensus",
+    desc: "Fault-tolerant distributed key-value store built on the Raft consensus algorithm, handling leader election, log replication, and network partitions.",
+    img: "/static/projects/raft-protocol.svg",
+    github: "https://github.com/sebytremblay/raft-protocol",
+    tags: ["Python", "Distributed Systems", "Consensus", "Networking"],
+  },
+  {
+    title: "BGP Router",
+    desc: "Simplified BGP router that establishes peer sessions, maintains a forwarding table, and performs route aggregation and disaggregation.",
+    img: "/static/projects/bgp-router.svg",
+    github: "https://github.com/sebytremblay/BGP-Router",
+    tags: ["Python", "Networking", "BGP", "Routing"],
   },
 ].map((project, index) => ({ ...project, id: index }));
 
