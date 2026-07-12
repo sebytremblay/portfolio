@@ -29,9 +29,8 @@ function CurrentWork() {
             interaction.
           </p>
           <p className="text-fun-gray-light text-base leading-relaxed mb-6">
-            The platform shipped in May 2026 as part of the MuleSoft Omni GA release, delivering 17
-            percent token savings on average and scaling up to 50 percent on MCP servers that return
-            large tool responses. Now I am building the agent evaluation harness that
+            The platform shipped in May 2026, delivering 17 percent average token savings and up to
+            50 percent on MCP servers with large tool responses. Now I am building the agent evaluation harness that
             scores whether each policy preserves agent behavior, proving we cut tokens without
             degrading how the agent reasons and completes its task.
           </p>
