@@ -12,7 +12,7 @@ const projects: Project[] = [
   {
     title: "Code Review Decomposition Service",
     desc: "AI-powered LangGraph pipeline that decomposes PRs into reviewable tasks.",
-    img: "/static/projects/code-review-decomposition.svg",
+    img: "/static/projects/code-review-decomposition.png",
     github: "https://github.com/SurfaceLayerAI/surface",
     tags: ["TypeScript", "LangGraph", "Next.js", "Anthropic Claude", "Tree-sitter", "Prisma"],
   },
