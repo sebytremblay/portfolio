@@ -26,14 +26,14 @@ function CurrentWork() {
           <p className="text-fun-gray-light text-base leading-relaxed mb-4">
             At MuleSoft, I am building the cost management platform for Agent Fabric: a FinOps layer
             that gives customers real-time visibility into the token consumption behind every AI agent
-            interaction. The platform surfaces optimization opportunities and enforces cost-reduction
-            policies at the gateway, trimming token volume without altering agent behavior.
+            interaction.
           </p>
           <p className="text-fun-gray-light text-base leading-relaxed mb-6">
-            The platform shipped in May 2026 as part of the MuleSoft Omni GA release, delivering 10 to
-            50 percent token savings depending on the workload. Now, I am designing the evaluation
-            framework that measures policy effectiveness, strengthening the accuracy and trust behind
-            every optimization we recommend.
+            The platform shipped in May 2026 as part of the MuleSoft Omni GA release, delivering 17
+            percent token savings on average and scaling up to 50 percent on MCP servers that return
+            large tool responses. Now I am building the agent evaluation harness that
+            scores whether each policy preserves agent behavior, proving we cut tokens without
+            degrading how the agent reasons and completes its task.
           </p>
           <a
             href="https://blogs.mulesoft.com/news/mcp-cost-management/"
