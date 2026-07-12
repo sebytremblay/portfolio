@@ -5,14 +5,14 @@ const projects: Project[] = [
   {
     title: "Graph Theory Arbitrage",
     desc: "Prediction market arbitrage system using graph theory, SAT solving, and real-time WebSocket execution.",
-    img: "/static/projects/graph-theory-arbitrage.svg",
+    img: "/static/projects/graph-theory-arbitrage.png",
     github: "https://github.com/sebytremblay/graph-theory-trading",
     tags: ["Python", "Graph Theory", "Prediction Markets", "NetworkX", "WebSockets", "SAT Solving", "React"],
   },
   {
     title: "GitHub OS",
     desc: "Claude Code plugin that turns GitHub into an agent control plane, slicing features into stacked draft PRs and auto-addressing review comments.",
-    img: "/static/projects/github-os.svg",
+    img: "/static/projects/github-os.png",
     github: "https://github.com/sebytremblay/github-os",
     tags: ["Claude Code", "Plugins", "Git", "GitHub", "Shell", "CLI"],
   },
