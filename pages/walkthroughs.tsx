@@ -25,8 +25,8 @@ function WalkthroughsPage() {
         </div>
       </div>
       <PageCTA
-        title="Want a walkthrough of your own systems?"
-        subtitle="I like talking through the work in detail. Reach out or connect if you want to go deeper."
+        title="Got questions?"
+        subtitle="Reach out or connect if you want to go deeper."
       />
     </Page>
   );
