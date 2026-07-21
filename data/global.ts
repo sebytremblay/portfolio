@@ -29,6 +29,10 @@ export const routes: Route[] = [
     path: "/projects",
   },
   {
+    title: "Walkthroughs",
+    path: "/walkthroughs",
+  },
+  {
     title: "Blog",
     path: "/blog",
   },

@@ -8,6 +8,23 @@ export type Project = {
   tags: string[];
 };
 
+export type WalkthroughReference = {
+  label: string;
+  url: string;
+};
+
+export type Walkthrough = {
+  id: number;
+  slug: string;
+  title: string;
+  desc: string;
+  youtubeId: string;
+  date?: string;
+  overview: string;
+  references?: WalkthroughReference[];
+  tags?: string[];
+};
+
 export type BlogPost = {
   id: number;
   title: string;
