@@ -17,6 +17,13 @@ const projects: Project[] = [
     tags: ["Claude Code", "Plugins", "Git", "GitHub", "Shell", "CLI"],
   },
   {
+    title: "Mirenta Backend",
+    desc: "Agent pipeline that turns a submitted lead into a published, prospect-facing one-pager through Research, Build, and Publish stages.",
+    img: "/static/projects/auto-outreach-backend.svg",
+    github: "https://github.com/sebytremblay/auto-outreach-backend",
+    tags: ["TypeScript", "Anthropic Claude", "Managed Agents", "Exa", "Supabase", "AWS S3", "Node"],
+  },
+  {
     title: "Code Review Decomposition Service",
     desc: "AI-powered LangGraph pipeline that decomposes PRs into reviewable tasks.",
     img: "/static/projects/code-review-decomposition.png",
