@@ -17,7 +17,7 @@ const projects: Project[] = [
     tags: ["Claude Code", "Plugins", "Git", "GitHub", "Shell", "CLI"],
   },
   {
-    title: "Mirenta Backend",
+    title: "Hyperpersonalized Outreach",
     desc: "Agent pipeline that turns a submitted lead into a published, prospect-facing one-pager through Research, Build, and Publish stages.",
     img: "/static/projects/auto-outreach-backend.svg",
     github: "https://github.com/sebytremblay/auto-outreach-backend",
